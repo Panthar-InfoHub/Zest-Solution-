@@ -9,12 +9,14 @@ import { WhyChooseUs } from "@/components/why-choose-us"
 import { Process } from "@/components/process"
 import { CTA } from "@/components/cta"
 import { Footer } from "@/components/footer"
+import { WhoWeAre } from "@/components/who-we-are"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navigation />
       <Hero />
+      <WhoWeAre />
       <Services />
       <B2BServices />
       <PricingB2B />

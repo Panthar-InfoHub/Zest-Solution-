@@ -2,16 +2,18 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
+import { WeManageMegamenu } from "./we-manage-megamenu"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isManageMegamenuOpen, setIsManageMegamenuOpen] = useState(false)
   const { scrollY } = useScroll()
-
+  
   const logoScale = useTransform(scrollY, [0, 100], [1, 0.85])
   const logoOpacity = useTransform(scrollY, [0, 100], [1, 0.95])
 
@@ -24,11 +26,11 @@ export function Navigation() {
   }, [])
 
   const navLinks = [
-    { href: "#services", label: "Services" },
-    { href: "#b2b", label: "B2B Solutions" },
-    { href: "#b2c", label: "B2C Solutions" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "#about", label: "About Us" },
+    { href: "#manage", label: "We Manage" },
+    { href: "#market", label: "We Market" },
+    { href: "#tools", label: "Tools" },
   ]
 
   return (
@@ -39,8 +41,9 @@ export function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-primary/5"
-          : "bg-transparent"
+          : "bg-background/80"
       }`}
+      onMouseLeave={() => setIsManageMegamenuOpen(false)}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 md:h-24">
@@ -69,21 +72,36 @@ export function Navigation() {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8 relative">
             {navLinks.map((link, index) => (
-              <motion.a
+              <div
                 key={link.href}
-                href={link.href}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="relative text-sm font-medium text-foreground/70 hover:text-foreground transition-colors group"
+                className="relative group"
+                onMouseEnter={() => link.label === "We Manage" && setIsManageMegamenuOpen(true)}
+                onMouseLeave={() => link.label === "We Manage" && setIsManageMegamenuOpen(false)}
               >
-                {link.label}
-                <motion.span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300" />
-              </motion.a>
+                <motion.a
+                  href={link.href}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="relative text-base font-semibold text-foreground/70 hover:text-foreground transition-colors flex items-center gap-1 tracking-tight"
+                >
+                  {link.label}
+                  {link.label === "We Manage" && (
+                    <motion.div
+                      animate={{ rotate: isManageMegamenuOpen ? 180 : 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <ChevronDown className="w-4 h-4" />
+                    </motion.div>
+                  )}
+                  <motion.span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300" />
+                </motion.a>
+                {link.label === "We Manage" && <WeManageMegamenu isOpen={isManageMegamenuOpen} />}
+              </div>
             ))}
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -129,7 +147,7 @@ export function Navigation() {
                 initial={{ x: -50, opacity: 0 }}
                 animate={isMobileMenuOpen ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="block py-3 px-4 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-muted/50 rounded-lg transition-all"
+                className="block py-3 px-4 text-base font-semibold text-foreground/70 hover:text-foreground hover:bg-muted/50 rounded-lg transition-all tracking-tight"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
