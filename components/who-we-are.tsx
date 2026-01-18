@@ -85,7 +85,7 @@ export function WhoWeAre() {
           viewport={{ once: true, amount: 0.3 }}
         >
           {/* YouTube Video */}
-          <motion.div className="lg:col-span-1" variants={itemVariants}>
+          <motion.div className="lg:col-span-1" variants={ }>
             <motion.div
               className="relative group rounded-2xl overflow-hidden shadow-2xl"
               whileHover={{ scale: 1.05, y: -10 }}
