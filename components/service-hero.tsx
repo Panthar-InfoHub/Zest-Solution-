@@ -9,7 +9,7 @@ interface ServiceHeroProps {
 
 export function ServiceHero({ service }: ServiceHeroProps) {
   return (
-    <div className="relative bg-gradient-to-r from-secondary to-orange-400 min-h-[400px] flex items-center justify-between px-4 sm:px-6 lg:px-8 py-12">
+    <div className="relative bg-gradient-to-r from-secondary to-orange-400 min-h-[400px] flex items-center justify-between px-4 sm:px-6 lg:px-8 pt-28 pb-12">
       <div className="w-full lg:w-1/2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

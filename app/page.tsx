@@ -1,6 +1,8 @@
 import { Hero } from "@/components/hero"
 import { Navigation } from "@/components/navigation"
 import { Services } from "@/components/services"
+import { WeManageSection } from "@/components/we-manage-section"
+import { WeMarketSection } from "@/components/we-market-section"
 import { B2BServices } from "@/components/b2b-services"
 import { B2CServices } from "@/components/b2c-services"
 import { PricingB2B } from "@/components/pricing-b2b"
@@ -18,10 +20,12 @@ export default function Home() {
       <Hero />
       <WhoWeAre />
       <Services />
+      <WeManageSection />
+      <WeMarketSection />
       <B2BServices />
-      <PricingB2B />
+      {/* <PricingB2B /> */}
       <B2CServices />
-      <PricingB2C />
+      {/* <PricingB2C /> */}
       <WhyChooseUs />
       <Process />
       <CTA />
