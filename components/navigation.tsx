@@ -80,12 +80,18 @@ export function Navigation() {
           <div className="hidden lg:flex items-center gap-8 relative">
             {navLinks.map((link, index) => (
               <div
-                key={link.href}
+                key={index}
                 className="relative group"
                 onMouseEnter={() => {
-                  if (link.label === "We Manage") setIsManageMegamenuOpen(true)
-                  if (link.label === "We Market") setIsMarketMegamenuOpen(true)
-                }}
+                  if (link.label === "We Manage") {
+                    setIsManageMegamenuOpen(true),
+                    setIsMarketMegamenuOpen(false)
+                  }
+                    if (link.label === "We Market") {
+                      setIsMarketMegamenuOpen(true)
+                      setIsManageMegamenuOpen(false)
+                    }
+                  }}
                 onMouseLeave={() => link.label === "We Manage" && setIsManageMegamenuOpen(false)}
               >
                 <motion.a
@@ -96,9 +102,15 @@ export function Navigation() {
                   className="relative text-base font-semibold text-foreground/70 hover:text-foreground transition-colors flex items-center gap-1 tracking-tight"
                 >
                   {link.label}
-                  {link.label === "We Manage" && (
+                  {(link.label === "We Manage" || link.label === "We Market") && (
                     <motion.div
-                      animate={{ rotate: isManageMegamenuOpen ? 180 : 0 }}
+                      animate={{
+                        rotate:
+                          (link.label === "We Manage" && isManageMegamenuOpen) ||
+                          (link.label === "We Market" && isMarketMegamenuOpen)
+                            ? 180
+                            : 0,
+                      }}
                       transition={{ duration: 0.2 }}
                     >
                       <ChevronDown className="w-4 h-4" />
@@ -110,7 +122,7 @@ export function Navigation() {
                 {link.label === "We Market" && <WeMarketMegamenu isOpen={isMarketMegamenuOpen} />}
               </div>
             ))}
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -151,7 +163,7 @@ export function Navigation() {
           <div className="py-4 space-y-1">
             {navLinks.map((link, index) => (
               <motion.a
-                key={link.href}
+                key={index}
                 href={link.href}
                 initial={{ x: -50, opacity: 0 }}
                 animate={isMobileMenuOpen ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}

@@ -5,7 +5,7 @@ import Link from "next/link"
 import { ShoppingCart, Package, Store, Briefcase, ImageIcon, Users, ArrowRight } from "lucide-react"
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Variants } from "framer-motion"
+import type { Variants } from "framer-motion"
 
 export function WeManageSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -100,13 +100,13 @@ export function WeManageSection() {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut" as const,
+      ease: "easeOut",
     },
   },
 }
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-32 relative overflow-hidden">
+    <section ref={sectionRef} className="py-12 sm:py-20 md:py-32 relative overflow-hidden">
       {/* Background gradient animation */}
       <motion.div
         className="absolute inset-0 opacity-10"
@@ -126,13 +126,13 @@ export function WeManageSection() {
       <div className="container mx-auto px-4 relative">
         {/* Section Header */}
         <motion.div
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
           <motion.span
-            className="text-sm font-semibold px-4 py-2 bg-secondary/10 text-secondary rounded-full inline-block"
+            className="text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 bg-secondary/10 text-secondary rounded-full inline-block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -141,7 +141,7 @@ export function WeManageSection() {
             Our Expertise
           </motion.span>
           <motion.h2
-            className="text-3xl md:text-5xl font-bold mt-6 mb-4 text-balance"
+            className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6 mb-3 sm:mb-4 text-balance"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -149,7 +149,7 @@ export function WeManageSection() {
             What We <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Manage</span>
           </motion.h2>
           <motion.p
-            className="text-lg text-muted-foreground leading-relaxed"
+            className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed px-2"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -160,7 +160,7 @@ export function WeManageSection() {
 
         {/* Services Grid */}
         <motion.div
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -168,38 +168,38 @@ export function WeManageSection() {
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
-              <motion.div key={index} variants={itemVariants} whileHover={{ y: -10 }}>
+              <motion.div key={index} variants={itemVariants} whileHover={{ y: -10 }} className="h-full">
                 <Link href={`/services/${service.slug}`}>
-                  <Card className="p-6 h-full hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer">
+                  <Card className="p-4 sm:p-5 md:p-6 h-full hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer">
                     {/* Animated background gradient */}
                     <motion.div
                       className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity`}
                     />
 
-                    <div className="relative z-10">
+                    <div className="relative z-10 flex flex-col h-full">
                       {/* Icon */}
                       <motion.div
-                        className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} text-white flex items-center justify-center mb-4 shadow-lg`}
+                        className={`w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br ${service.color} text-white flex items-center justify-center mb-3 sm:mb-4 shadow-lg flex-shrink-0`}
                         whileHover={{ rotate: 360, scale: 1.1 }}
                         transition={{ duration: 0.6 }}
                       >
-                        <IconComponent className="w-7 h-7" />
+                        <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
                       </motion.div>
 
                       {/* Title */}
-                      <h3 className="text-xl font-bold mb-2 group-hover:text-secondary transition-colors">
+                      <h3 className="text-lg sm:text-xl font-bold mb-2 group-hover:text-secondary transition-colors line-clamp-2">
                         {service.title}
                       </h3>
 
                       {/* Description */}
-                      <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{service.description}</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 leading-relaxed">{service.description}</p>
 
                       {/* Service items */}
-                      <div className="space-y-1.5 mb-4">
+                      <div className="space-y-1 sm:space-y-1.5 mb-3 sm:mb-4 flex-1">
                         {service.items.map((item, idx) => (
                           <motion.div
                             key={idx}
-                            className="text-xs text-muted-foreground flex items-center gap-2"
+                            className="text-xs text-muted-foreground flex items-center gap-1.5 sm:gap-2"
                             initial={{ opacity: 0, x: -10 }}
                             animate={isInView ? { opacity: 1, x: 0 } : {}}
                             transition={{ delay: 0.1 * index + 0.05 * idx }}
@@ -216,14 +216,14 @@ export function WeManageSection() {
 
                       {/* CTA Arrow */}
                       <motion.div
-                        className="flex items-center gap-2 text-secondary font-semibold text-sm group-hover:gap-3 transition-all"
+                        className="flex items-center gap-2 text-secondary font-semibold text-xs sm:text-sm group-hover:gap-3 transition-all mt-auto"
                         initial={{ opacity: 0, x: -10 }}
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ delay: 0.2 + index * 0.05 }}
                       >
                         <span>Learn More</span>
                         <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}>
-                          <ArrowRight className="w-4 h-4" />
+                          <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                         </motion.div>
                       </motion.div>
                     </div>
@@ -241,15 +241,15 @@ export function WeManageSection() {
 
         {/* Bottom CTA */}
         <motion.div
-          className="text-center mt-12"
+          className="text-center mt-8 sm:mt-10 md:mt-12"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <p className="text-muted-foreground mb-4">Need help with a specific service?</p>
+          <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 sm:mb-4">Need help with a specific service?</p>
           <Link href="#cta">
             <motion.button
-              className="px-8 py-3 bg-secondary hover:bg-secondary/90 text-white font-semibold rounded-lg transition-colors"
+              className="px-4 sm:px-8 py-2 sm:py-3 bg-secondary hover:bg-secondary/90 text-white font-semibold text-sm sm:text-base rounded-lg transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

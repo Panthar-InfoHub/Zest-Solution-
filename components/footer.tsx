@@ -26,24 +26,24 @@ export function Footer() {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+      <div className="container mx-auto px-4 py-12 sm:py-16 md:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="text-2xl font-bold mb-4">
+            <div className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">
               Zest<span className="text-accent">•</span>Solution
             </div>
-            <p className="text-primary-foreground/80 mb-4 leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-sm text-primary-foreground/80 mb-4 leading-relaxed max-w-sm">
               Your comprehensive partner for B2B marketing excellence and B2C e-commerce success. Connecting businesses
               to powerful growth opportunities.
             </p>
-            <div className="flex gap-4">
-              <div className="flex items-center gap-2 text-sm">
-                <Building2 className="w-4 h-4" />
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex items-center gap-2 text-xs sm:text-sm">
+                <Building2 className="w-4 h-4 flex-shrink-0" />
                 <span>B2B Marketing</span>
               </div>
-              <div className="flex items-center gap-2 text-sm">
-                <ShoppingBag className="w-4 h-4" />
+              <div className="flex items-center gap-2 text-xs sm:text-sm">
+                <ShoppingBag className="w-4 h-4 flex-shrink-0" />
                 <span>B2C E-commerce</span>
               </div>
             </div>
@@ -51,13 +51,13 @@ export function Footer() {
 
           {/* B2B Services */}
           <div>
-            <h4 className="font-bold mb-4">B2B Services</h4>
-            <ul className="space-y-2">
+            <h4 className="font-bold mb-3 sm:mb-4 text-sm sm:text-base">B2B Services</h4>
+            <ul className="space-y-1.5 sm:space-y-2">
               {links.b2b.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    className="text-xs sm:text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
                     {link.label}
                   </a>
@@ -68,13 +68,13 @@ export function Footer() {
 
           {/* B2C Services */}
           <div>
-            <h4 className="font-bold mb-4">B2C Services</h4>
-            <ul className="space-y-2">
+            <h4 className="font-bold mb-3 sm:mb-4 text-sm sm:text-base">B2C Services</h4>
+            <ul className="space-y-1.5 sm:space-y-2">
               {links.b2c.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    className="text-xs sm:text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
                     {link.label}
                   </a>
@@ -85,13 +85,13 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-bold mb-4">Company</h4>
-            <ul className="space-y-2">
+            <h4 className="font-bold mb-3 sm:mb-4 text-sm sm:text-base">Company</h4>
+            <ul className="space-y-1.5 sm:space-y-2">
               {links.company.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    className="text-xs sm:text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
                     {link.label}
                   </a>
@@ -102,11 +102,13 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-primary-foreground/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-            <p>© {currentYear} Zest Solution. All rights reserved.</p>
-            <p className="text-primary-foreground/60">Designed and Developed By Panther Inhub Pvt. Ltd.</p>
-            <div className="flex gap-6">
+        <div className="pt-6 sm:pt-8 border-t border-primary-foreground/20">
+          <div className="flex flex-col gap-3 sm:gap-4 text-xs sm:text-sm text-primary-foreground/60 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
+              <p>© {currentYear} Zest Solution. All rights reserved.</p>
+              <p className="text-primary-foreground/60">Designed and Developed By Panther Inhub Pvt. Ltd.</p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center sm:justify-start">
               <a href="#" className="hover:text-primary-foreground transition-colors">
                 Privacy Policy
               </a>

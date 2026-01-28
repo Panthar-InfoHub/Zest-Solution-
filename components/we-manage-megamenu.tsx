@@ -27,7 +27,7 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
     {
       icon: ShoppingCart,
       title: "Data Entry Services",
-      color: "text-teal-500",
+      color: "text-foreground",
       items: [
         { title: "Online Data Entry Services", slug: "online-data-entry-services" },
         { title: "Offline Data Entry Services", slug: "offline-data-entry-services" },
@@ -38,7 +38,7 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
     {
       icon: Package,
       title: "e commerce platforms",
-      color: "text-blue-500",
+      color: "text-foreground",
       items: [
         { title: "Product Upload Listing Services", slug: "product-upload-listing-services" },
         {
@@ -59,7 +59,7 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
     {
       icon: Store,
       title: "Marketplaces",
-      color: "text-pink-500",
+      color: "text-foreground",
       items: [
         { title: "Amazon", slug: "amazon-marketplace" },
         { title: "Ebay", slug: "ebay-marketplace" },
@@ -71,7 +71,7 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
     {
       icon: Briefcase,
       title: "Amazon Management",
-      color: "text-pink-500",
+      color: "text-foreground",
       items: [
         { title: "amazon listing creation services", slug: "amazon-listing-creation-services" },
         {
@@ -87,7 +87,7 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
     {
       icon: ImageIcon,
       title: "Image Editing",
-      color: "text-purple-500",
+      color: "text-foreground",
       items: [
         { title: "Image Retouching", slug: "image-retouching" },
         { title: "Image Restoration", slug: "image-restoration" },
@@ -99,7 +99,7 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
     {
       icon: Users,
       title: "Virtual Assistant For eCommerce Store",
-      color: "text-orange-500",
+      color: "text-foreground",
       items: [
         { title: "Chat Support", slug: "chat-support" },
         { title: "Email Support", slug: "email-support" },
@@ -107,62 +107,53 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
     },
   ]
 
-  // Organize sections into 3 columns with 2 sections each
+  // Column structure: Column 1: Data Entry + Amazon Management, Column 2: Ecommerce + Image Editing, Column 3: Marketplaces + Virtual Assistant
   const columns = [
-    [menuSections[0], menuSections[3]], // Column 1: Data Entry + Amazon Management
-    [menuSections[1], menuSections[5]], // Column 2: e-commerce platforms + Virtual Assistant
-    [menuSections[2], menuSections[4]], // Column 3: Marketplaces + Image Editing
+    [menuSections[0], menuSections[3]], // Column 1: Data Entry Services + Amazon Management
+    [menuSections[1], menuSections[4]], // Column 2: e commerce platforms + Image Editing
+    [menuSections[2], menuSections[5]], // Column 3: Marketplaces + Virtual Assistant
   ]
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: -10 }}
-      animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
-      transition={{ duration: 0.2 }}
-      className={`fixed top-16 left-1/2 -translate-x-1/2 bg-background/95 backdrop-blur-xl border-b border-border/50 shadow-2xl overflow-x-hidden max-w-7xl w-[calc(100%-2rem)] ${
+      initial={{ opacity: 0, y: -8 }}
+      animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -8 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
+      className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-background border border-border shadow-lg max-w-4xl w-[calc(100vw-4rem)] rounded-lg ${
         isOpen ? "pointer-events-auto" : "pointer-events-none"
       }`}
     >
-      <div className="px-3 sm:px-4 lg:px-6 py-4 sm:py-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+      <div className="p-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {columns.map((column, colIdx) => (
-            <div key={colIdx} className="space-y-4 lg:space-y-6">
+            <div key={colIdx} className="flex flex-col space-y-6">
               {column.map((section, sectionIdx) => {
                 const IconComponent = section.icon
                 return (
                   <motion.div
                     key={section.title}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-                    transition={{ duration: 0.2, delay: (colIdx * 0.1) + (sectionIdx * 0.05) }}
-                    className="space-y-2"
+                    initial={{ opacity: 0, y: 4 }}
+                    animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: 4 }}
+                    transition={{ duration: 0.2, delay: (colIdx * 0.06) + (sectionIdx * 0.03) }}
+                    className="flex flex-col"
                   >
-                    <div className="flex items-center gap-2 pb-2 border-b border-accent/40">
-                      <motion.div
-                        whileHover={{ scale: 1.1, rotate: 5 }}
-                        transition={{ type: "spring", stiffness: 400 }}
-                      >
-                        <IconComponent className={`w-5 h-5 ${section.color}`} />
-                      </motion.div>
-                      <h3 className="font-bold text-foreground text-sm">{section.title}</h3>
+                    <div className="flex items-center gap-2 mb-3 pb-2 border-b border-border/50">
+                      <IconComponent className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                      <h3 className="text-xs font-semibold text-orange-500">
+                        {section.title}
+                      </h3>
                     </div>
 
-                    <ul className="space-y-1.5">
-                      {section.items.map((item, itemIdx) => (
-                        <motion.li
-                          key={item.slug}
-                          initial={{ opacity: 0, x: -10 }}
-                          animate={isOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
-                          transition={{ duration: 0.2, delay: (colIdx * 0.1) + (sectionIdx * 0.05) + (itemIdx * 0.01) }}
-                        >
+                    <ul className="space-y-1.5 flex-1">
+                      {section.items.map((item) => (
+                        <li key={item.slug}>
                           <Link
                             href={`/services/${item.slug}`}
-                            className="text-xs text-foreground/70 hover:text-accent transition-colors flex items-center gap-2 group"
+                            className="text-xs text-foreground/70 hover:text-foreground transition-colors block py-0.5"
                           >
-                            <span className="w-1 h-1 rounded-full bg-accent opacity-50 group-hover:opacity-100 transition-opacity" />
-                            <span className="group-hover:translate-x-0.5 transition-transform">{item.title}</span>
+                            {item.title}
                           </Link>
-                        </motion.li>
+                        </li>
                       ))}
                     </ul>
                   </motion.div>

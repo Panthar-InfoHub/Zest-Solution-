@@ -54,13 +54,13 @@ export function WhyChooseUs() {
 
       <div className="container mx-auto px-4 relative">
         <motion.div
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
           <motion.h2
-            className="text-3xl md:text-5xl font-bold mb-4 text-balance"
+            className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4 text-balance"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -68,7 +68,7 @@ export function WhyChooseUs() {
             Why Partner With Us?
           </motion.h2>
           <motion.p
-            className="text-lg text-muted-foreground leading-relaxed"
+            className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed px-2"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -78,7 +78,7 @@ export function WhyChooseUs() {
           </motion.p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
           {reasons.map((reason, index) => (
             <motion.div
               key={index}
@@ -87,7 +87,7 @@ export function WhyChooseUs() {
               transition={{ delay: 0.2 * index, duration: 0.8, type: "spring" }}
               whileHover={{ scale: 1.05, rotate: index % 2 === 0 ? -1 : 1 }}
             >
-              <Card className="p-8 hover:shadow-2xl transition-all duration-500 group relative overflow-hidden h-full">
+              <Card className="p-4 sm:p-6 md:p-8 hover:shadow-2xl transition-all duration-500 group relative overflow-hidden h-full">
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-accent/5 to-transparent opacity-0 group-hover:opacity-100"
                   initial={{ x: "-100%", y: "-100%" }}
@@ -95,9 +95,9 @@ export function WhyChooseUs() {
                   transition={{ duration: 0.6 }}
                 />
 
-                <div className="flex items-start gap-4 relative z-10">
+                <div className="flex items-start gap-3 sm:gap-4 relative z-10">
                   <motion.div
-                    className="w-14 h-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 relative"
+                    className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 relative"
                     whileHover={{
                       scale: 1.2,
                       rotate: 360,
@@ -105,27 +105,27 @@ export function WhyChooseUs() {
                     }}
                     transition={{ duration: 0.8, type: "spring" }}
                   >
-                    <reason.icon className="w-7 h-7" />
+                    <reason.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
                     <motion.div
-                      className="absolute inset-0 rounded-xl border-2 border-secondary"
+                      className="absolute inset-0 rounded-lg sm:rounded-xl border-2 border-secondary"
                       initial={{ scale: 1, opacity: 0.5 }}
                       whileHover={{ scale: 1.5, opacity: 0 }}
                       transition={{ duration: 0.6 }}
                     />
                   </motion.div>
-                  <div>
+                  <div className="flex-1 min-w-0">
                     <motion.h3
-                      className="text-xl font-bold mb-2 group-hover:text-secondary transition-colors"
+                      className="text-lg sm:text-xl font-bold mb-1 sm:mb-2 group-hover:text-secondary transition-colors line-clamp-2"
                       whileHover={{ x: 5 }}
                     >
                       {reason.title}
                     </motion.h3>
-                    <p className="text-muted-foreground leading-relaxed">{reason.description}</p>
+                    <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">{reason.description}</p>
                   </div>
                 </div>
 
                 <motion.div
-                  className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-secondary/10 to-transparent rounded-tl-full"
+                  className="absolute bottom-0 right-0 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-tl from-secondary/10 to-transparent rounded-tl-full"
                   initial={{ scale: 0 }}
                   whileHover={{ scale: 1 }}
                   transition={{ duration: 0.4 }}

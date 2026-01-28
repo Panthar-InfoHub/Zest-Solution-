@@ -99,37 +99,6 @@ export function WhoWeAre() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          {/* YouTube Video */}
-          <motion.div className="lg:col-span-1" variants={itemVariants}>
-            <motion.div
-              className="relative group rounded-2xl overflow-hidden shadow-2xl"
-              whileHover={{ scale: 1.05, y: -10 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-0 group-hover:opacity-20 transition-opacity" />
-              <div className="relative pt-[56.25%] bg-black">
-                <iframe
-                  className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&fs=1"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-
-              {/* Video Badge */}
-              <motion.div
-                className="absolute top-4 left-4 bg-gradient-to-r from-secondary to-secondary/80 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg"
-                initial={{ opacity: 0, y: -20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                About Zest Solutions
-              </motion.div>
-            </motion.div>
-          </motion.div>
           {/* Content and Stats */}
           <motion.div
             className="lg:col-span-2 space-y-8"
@@ -246,6 +215,38 @@ export function WhoWeAre() {
                   </motion.div>
                 </motion.div>
               ))}
+            </motion.div>
+          </motion.div>
+
+          {/* YouTube Video */}
+          <motion.div className="lg:col-span-1" variants={itemVariants}>
+            <motion.div
+              className="relative group rounded-2xl overflow-hidden shadow-2xl"
+              whileHover={{ scale: 1.05, y: -10 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-0 group-hover:opacity-20 transition-opacity" />
+              <div className="relative pt-[56.25%] bg-black">
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&fs=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+
+              {/* Video Badge */}
+              <motion.div
+                className="absolute top-4 left-4 bg-gradient-to-r from-secondary to-secondary/80 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                About Zest Solutions
+              </motion.div>
             </motion.div>
           </motion.div>
         </motion.div>

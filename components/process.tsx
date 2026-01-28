@@ -43,13 +43,13 @@ export function Process() {
 
       <div className="container mx-auto px-4 relative">
         <motion.div
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
           <motion.h2
-            className="text-3xl md:text-5xl font-bold mb-4 text-balance"
+            className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4 text-balance"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -57,7 +57,7 @@ export function Process() {
             Our Proven Process
           </motion.h2>
           <motion.p
-            className="text-lg text-muted-foreground leading-relaxed"
+            className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed px-2"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -67,7 +67,7 @@ export function Process() {
           </motion.p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               <motion.div
@@ -76,7 +76,7 @@ export function Process() {
                 transition={{ delay: 0.2 * index, duration: 0.6, type: "spring" }}
                 whileHover={{ y: -15, scale: 1.05 }}
               >
-                <Card className="p-6 h-full hover:shadow-2xl transition-all duration-500 group relative overflow-hidden">
+                <Card className="p-4 sm:p-5 md:p-6 h-full hover:shadow-2xl transition-all duration-500 group relative overflow-hidden">
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-accent/5"
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -86,7 +86,7 @@ export function Process() {
 
                   <div className="relative z-10">
                     <motion.div
-                      className="text-5xl font-bold text-secondary/20 mb-4"
+                      className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary/20 mb-2 sm:mb-3 md:mb-4"
                       initial={{ opacity: 0, scale: 0, rotate: -180 }}
                       animate={isInView ? { opacity: 1, scale: 1, rotate: 0 } : {}}
                       transition={{ delay: 0.3 + index * 0.1, duration: 0.8, type: "spring" }}
@@ -95,12 +95,12 @@ export function Process() {
                       {step.number}
                     </motion.div>
                     <motion.h3
-                      className="text-xl font-bold mb-3 group-hover:text-secondary transition-colors"
+                      className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 group-hover:text-secondary transition-colors line-clamp-2"
                       whileHover={{ x: 5 }}
                     >
                       {step.title}
                     </motion.h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                    <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">{step.description}</p>
                   </div>
 
                   <motion.div
@@ -115,7 +115,7 @@ export function Process() {
 
               {index < steps.length - 1 && (
                 <motion.div
-                  className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10"
+                  className="hidden lg:block absolute top-1/2 -right-2 md:-right-3 transform -translate-y-1/2 z-10"
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.5 + index * 0.2, duration: 0.5 }}
@@ -124,7 +124,7 @@ export function Process() {
                     animate={{ x: [0, 5, 0] }}
                     transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, delay: index * 0.3 }}
                   >
-                    <ArrowRight className="w-6 h-6 text-secondary" />
+                    <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-secondary" />
                   </motion.div>
                 </motion.div>
               )}

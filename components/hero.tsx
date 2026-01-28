@@ -8,11 +8,11 @@ import { motion, useScroll, useTransform } from "framer-motion"
 export function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const { scrollY } = useScroll()
+  const [opacity, setOpacity] = useState(1)
+  const [scale, setScale] = useState(1)
 
   const y1 = useTransform(scrollY, [0, 500], [0, 150])
   const y2 = useTransform(scrollY, [0, 500], [0, -150])
-  const opacity = useTransform(scrollY, [0, 300], [1, 0])
-  const scale = useTransform(scrollY, [0, 300], [1, 0.8])
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -92,7 +92,7 @@ export function Hero() {
         ))}
       </motion.div>
 
-      <motion.div className="container mx-auto px-4 pt-32 pb-20 relative z-10" style={{ opacity, scale }}>
+      <motion.div className="container mx-auto px-4 pt-20 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -100,32 +100,32 @@ export function Hero() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <motion.div
-              className="inline-block mb-6"
+              className="inline-block mb-4 sm:mb-6"
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ type: "spring", stiffness: 200, damping: 15, delay: 0.2 }}
               whileHover={{ scale: 1.05, rotate: [0, -5, 5, 0] }}
             >
-              <span className="relative text-sm font-semibold px-6 py-3 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 bg-[length:200%_auto] text-foreground rounded-full inline-flex items-center gap-2 overflow-hidden border border-primary/30 shadow-lg shadow-primary/10 animate-gradient">
+              <span className="relative text-xs sm:text-sm font-semibold px-3 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 bg-[length:200%_auto] text-foreground rounded-full inline-flex items-center gap-1 sm:gap-2 overflow-hidden border border-primary/30 shadow-lg shadow-primary/10 animate-gradient">
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
                   animate={{ x: [-300, 300] }}
                   transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                 />
-                <Sparkles className="w-4 h-4 text-secondary" />
+                <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-secondary flex-shrink-0" />
                 <span className="relative">Trusted by 5000+ Businesses Worldwide</span>
-                <Award className="w-4 h-4 text-primary" />
+                <Award className="w-3 h-3 sm:w-4 sm:h-4 text-primary flex-shrink-0" />
               </span>
             </motion.div>
 
             <motion.h1
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight text-balance"
+              className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 md:mb-8 leading-tight text-balance"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1 }}
             >
               <motion.span
-                className="block mb-2"
+                className="block mb-1 sm:mb-2"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
@@ -143,7 +143,7 @@ export function Hero() {
             </motion.h1>
 
             <motion.p
-              className="text-lg md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-light"
+              className="text-sm sm:text-base md:text-lg lg:text-2xl text-muted-foreground mb-6 sm:mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed font-light px-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 1 }}
@@ -154,42 +154,42 @@ export function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center mb-8 sm:mb-12 md:mb-16 px-2"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.1, duration: 0.8 }}
             >
-              <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }} className="relative group">
+              <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }} className="relative group w-full sm:w-auto">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur-lg opacity-50 group-hover:opacity-100 transition-opacity animate-pulse-glow" />
                 <Button
                   size="lg"
-                  className="relative rounded-full gap-2 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-base shadow-xl"
+                  className="relative rounded-full gap-2 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base shadow-xl w-full sm:w-auto"
                 >
-                  <Zap className="w-5 h-5" />
+                  <Zap className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                   <span>Start Your Growth</span>
                   <motion.div
                     animate={{ x: [0, 5, 0] }}
                     transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
                   >
-                    <ArrowRight className="w-5 h-5" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                   </motion.div>
                 </Button>
               </motion.div>
 
-              <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
+              <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-full gap-3 bg-background/50 backdrop-blur-sm border-2 px-8 py-6 text-base hover:bg-background/80 hover:border-secondary/50 transition-all"
+                  className="rounded-full gap-2 sm:gap-3 bg-background/50 backdrop-blur-sm border-2 px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base hover:bg-background/80 hover:border-secondary/50 transition-all w-full sm:w-auto"
                 >
-                  <Phone className="w-5 h-5" />
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                   <span>+91 8484099961</span>
                 </Button>
               </motion.div>
             </motion.div>
 
             <motion.div
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto"
+              className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 max-w-5xl mx-auto px-2"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.3, duration: 0.8 }}
@@ -217,9 +217,9 @@ export function Hero() {
                     transition: { duration: 0.3 },
                   }}
                 >
-                  <div className="glass-card rounded-2xl p-6 transition-all duration-300 group-hover:shadow-2xl">
+                  <div className="glass-card rounded-lg sm:rounded-2xl p-3 sm:p-4 md:p-6 transition-all duration-300 group-hover:shadow-2xl">
                     <motion.div
-                      className={`w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center`}
+                      className={`w-8 h-8 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3 rounded-lg sm:rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center`}
                       animate={{
                         rotate: [0, 360],
                       }}
@@ -229,17 +229,17 @@ export function Hero() {
                         ease: "linear",
                       }}
                     >
-                      <stat.icon className="w-6 h-6 text-white" />
+                      <stat.icon className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                     </motion.div>
                     <motion.div
-                      className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent mb-2"
+                      className="text-2xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent mb-1 sm:mb-2"
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 1.7 + index * 0.1, type: "spring" }}
                     >
                       {stat.value}
                     </motion.div>
-                    <div className="text-sm text-muted-foreground group-hover:text-foreground transition-colors font-medium">
+                    <div className="text-xs sm:text-sm text-muted-foreground group-hover:text-foreground transition-colors font-medium">
                       {stat.label}
                     </div>
                   </div>
