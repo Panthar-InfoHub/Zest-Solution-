@@ -1,39 +1,39 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown } from "lucide-react"
-import { ThemeToggle } from "./theme-toggle"
-import { WeManageMegamenu } from "./we-manage-megamenu"
-import { WeMarketMegamenu } from "./we-market-megamenu"
-import { motion, useScroll, useTransform } from "framer-motion"
-import Image from "next/image"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { ThemeToggle } from "./theme-toggle";
+import { WeManageMegamenu } from "./we-manage-megamenu";
+import { WeMarketMegamenu } from "./we-market-megamenu";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 
 export function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isManageMegamenuOpen, setIsManageMegamenuOpen] = useState(false)
-  const [isMarketMegamenuOpen, setIsMarketMegamenuOpen] = useState(false)
-  const { scrollY } = useScroll()
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isManageMegamenuOpen, setIsManageMegamenuOpen] = useState(false);
+  const [isMarketMegamenuOpen, setIsMarketMegamenuOpen] = useState(false);
+  const { scrollY } = useScroll();
 
-  const logoScale = useTransform(scrollY, [0, 100], [1, 0.85])
-  const logoOpacity = useTransform(scrollY, [0, 100], [1, 0.95])
+  const logoScale = useTransform(scrollY, [0, 100], [1, 0.85]);
+  const logoOpacity = useTransform(scrollY, [0, 100], [1, 0.95]);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "#  ", label: "About Us" },
-    { href: "#", label: "We Manage" },
-    { href: "#", label: "We Market" },
-    { href: "#", label: "Tools" },
-  ]
+    { href: "/", label: "About Us" },
+    { href: "/", label: "We Manage" },
+    { href: "/", label: "We Market" },
+    { href: "/", label: "Tools" },
+  ];
 
   return (
     <motion.nav
@@ -45,12 +45,8 @@ export function Navigation() {
           ? "bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-primary/5"
           : "bg-transparent"
       }`}
-      onMouseLeave={() => {
-        setIsManageMegamenuOpen(false)
-        setIsMarketMegamenuOpen(false)
-      }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative">
         <div className="flex items-center justify-between h-20 md:h-24">
           <motion.a
             href="#"
@@ -64,7 +60,13 @@ export function Navigation() {
               whileHover={{ y: -2 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <Image src="/images/zs-20logo.png" alt="Zest Solutions" fill className="object-contain" priority />
+              <Image
+                src="/images/zs-20logo.png"
+                alt="Zest Solutions"
+                fill
+                className="object-contain"
+                priority
+              />
             </motion.div>
             <motion.span
               className="text-xs text-muted-foreground tracking-wider hidden md:block"
@@ -77,22 +79,25 @@ export function Navigation() {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8 relative">
+          <div className="hidden lg:flex items-center gap-8 relative" onMouseLeave={() => {
+    setIsManageMegamenuOpen(false)
+    setIsMarketMegamenuOpen(false)
+  }}>
             {navLinks.map((link, index) => (
               <div
                 key={index}
-                className="relative group"
+                className="group"
                 onMouseEnter={() => {
                   if (link.label === "We Manage") {
-                    setIsManageMegamenuOpen(true),
-                    setIsMarketMegamenuOpen(false)
+                    setIsManageMegamenuOpen(true);
+                    setIsMarketMegamenuOpen(false);
                   }
-                    if (link.label === "We Market") {
-                      setIsMarketMegamenuOpen(true)
-                      setIsManageMegamenuOpen(false)
-                    }
-                  }}
-                onMouseLeave={() => link.label === "We Manage" && setIsManageMegamenuOpen(false)}
+                  if (link.label === "We Market") {
+                    setIsMarketMegamenuOpen(true);
+                    setIsManageMegamenuOpen(false);
+                  }
+                }}
+                
               >
                 <motion.a
                   href={link.href}
@@ -102,11 +107,13 @@ export function Navigation() {
                   className="relative text-base font-semibold text-foreground/70 hover:text-foreground transition-colors flex items-center gap-1 tracking-tight"
                 >
                   {link.label}
-                  {(link.label === "We Manage" || link.label === "We Market") && (
+                  {(link.label === "We Manage" ||
+                    link.label === "We Market") && (
                     <motion.div
                       animate={{
                         rotate:
-                          (link.label === "We Manage" && isManageMegamenuOpen) ||
+                          (link.label === "We Manage" &&
+                            isManageMegamenuOpen) ||
                           (link.label === "We Market" && isMarketMegamenuOpen)
                             ? 180
                             : 0,
@@ -118,10 +125,10 @@ export function Navigation() {
                   )}
                   <motion.span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300" />
                 </motion.a>
-                {link.label === "We Manage" && <WeManageMegamenu isOpen={isManageMegamenuOpen} />}
-                {link.label === "We Market" && <WeMarketMegamenu isOpen={isMarketMegamenuOpen} />}
               </div>
             ))}
+            <WeManageMegamenu isOpen={isManageMegamenuOpen} />
+            <WeMarketMegamenu isOpen={isMarketMegamenuOpen} />
             {/* <ThemeToggle /> */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -141,14 +148,21 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-3 lg:hidden">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <motion.button
               className="p-2 rounded-lg hover:bg-muted/50 transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               whileTap={{ scale: 0.9 }}
             >
-              <motion.div animate={isMobileMenuOpen ? { rotate: 180 } : { rotate: 0 }} transition={{ duration: 0.3 }}>
-                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              <motion.div
+                animate={isMobileMenuOpen ? { rotate: 180 } : { rotate: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
               </motion.div>
             </motion.button>
           </div>
@@ -156,7 +170,11 @@ export function Navigation() {
 
         <motion.div
           initial={false}
-          animate={isMobileMenuOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+          animate={
+            isMobileMenuOpen
+              ? { height: "auto", opacity: 1 }
+              : { height: 0, opacity: 0 }
+          }
           transition={{ duration: 0.3 }}
           className="lg:hidden overflow-hidden"
         >
@@ -166,7 +184,11 @@ export function Navigation() {
                 key={index}
                 href={link.href}
                 initial={{ x: -50, opacity: 0 }}
-                animate={isMobileMenuOpen ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
+                animate={
+                  isMobileMenuOpen
+                    ? { x: 0, opacity: 1 }
+                    : { x: -50, opacity: 0 }
+                }
                 transition={{ delay: index * 0.1 }}
                 className="block py-3 px-4 text-base font-semibold text-foreground/70 hover:text-foreground hover:bg-muted/50 rounded-lg transition-all tracking-tight"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -176,11 +198,16 @@ export function Navigation() {
             ))}
             <motion.div
               initial={{ x: -50, opacity: 0 }}
-              animate={isMobileMenuOpen ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
+              animate={
+                isMobileMenuOpen ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }
+              }
               transition={{ delay: navLinks.length * 0.1 }}
               className="pt-2"
             >
-              <Button size="sm" className="w-full rounded-full bg-gradient-to-r from-secondary to-accent">
+              <Button
+                size="sm"
+                className="w-full rounded-full bg-gradient-to-r from-secondary to-accent"
+              >
                 Get Started
               </Button>
             </motion.div>
@@ -188,5 +215,5 @@ export function Navigation() {
         </motion.div>
       </div>
     </motion.nav>
-  )
+  );
 }

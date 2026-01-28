@@ -69,9 +69,12 @@ export function WeMarketMegamenu({ isOpen }: MegamenuProps) {
       initial={{ opacity: 0, y: -8 }}
       animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -8 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
-      className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-background border border-border shadow-lg overflow-x-auto overflow-y-auto max-w-2xl w-[calc(100vw-4rem)] rounded-lg max-h-[600px] ${
-        isOpen ? "pointer-events-auto" : "pointer-events-none"
-      }`}
+      className={`absolute top-full mt-3
+left-1/2 -translate-x-1/2
+bg-background border border-border shadow-lg
+w-full max-w-4xl
+rounded-xl
+${isOpen ? "pointer-events-auto" : "pointer-events-none"}`}
     >
       <div className="p-6 min-w-max md:min-w-full">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

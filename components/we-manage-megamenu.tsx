@@ -119,14 +119,17 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
       initial={{ opacity: 0, y: -8 }}
       animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -8 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
-      className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-background border border-border shadow-lg max-w-4xl w-[calc(100vw-4rem)] rounded-lg ${
-        isOpen ? "pointer-events-auto" : "pointer-events-none"
-      }`}
+      className={`absolute top-full mt-3
+left-1/2 -translate-x-1/2
+bg-background border border-border shadow-lg
+w-full max-w-5xl
+rounded-xl
+${isOpen ? "pointer-events-auto" : "pointer-events-none"}`}
     >
-      <div className="p-6">
+      <div className="px-6 py-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {columns.map((column, colIdx) => (
-            <div key={colIdx} className="flex flex-col space-y-6">
+            <div key={colIdx} className="flex flex-col space-y-4">
               {column.map((section, sectionIdx) => {
                 const IconComponent = section.icon
                 return (
@@ -144,12 +147,12 @@ export function WeManageMegamenu({ isOpen }: MegamenuProps) {
                       </h3>
                     </div>
 
-                    <ul className="space-y-1.5 flex-1">
+                    <ul className="space-y-1 flex-1">
                       {section.items.map((item) => (
                         <li key={item.slug}>
                           <Link
                             href={`/services/${item.slug}`}
-                            className="text-xs text-foreground/70 hover:text-foreground transition-colors block py-0.5"
+                            className="text-xs text-foreground/70 hover:text-foreground transition-colors block py-0"
                           >
                             {item.title}
                           </Link>
