@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   title: "Zest Solution | B2B Marketing & B2C E-commerce Solutions",
   description:
     "Your comprehensive partner for B2B marketing services and B2C e-commerce solutions. From offline marketing to online marketplace management.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
