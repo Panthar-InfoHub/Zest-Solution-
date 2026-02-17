@@ -1,4 +1,4 @@
-export interface Service {
+export interface  Service {
   id: string
   slug: string
   title: string
@@ -31,7 +31,7 @@ export const servicesData: Service[] = [
     heroTitle: "Reliable Online Data Entry Services",
     heroDescription:
       "Transform your physical documents into organized digital data with our expert online data entry specialists.",
-    heroImage: "/images/services/data-entry.jpg",
+    heroImage: "/services/we-market/online-data-entry.jpg",
     whatWeOffer: [
       "High-speed data entry with 99%+ accuracy",
       "Real-time data verification and validation",
@@ -75,7 +75,7 @@ export const servicesData: Service[] = [
     heroTitle: "Professional Offline Data Entry Solutions",
     heroDescription:
       "Convert your paper records into structured digital databases with precision and speed.",
-    heroImage: "/images/services/data-entry.jpg",
+    heroImage: "/images/services/data-entry.png",
     whatWeOffer: [
       "OCR and manual data entry",
       "Handwriting recognition",
@@ -118,7 +118,7 @@ export const servicesData: Service[] = [
     heroTitle: "Advanced Image Data Entry Services",
     heroDescription:
       "Leverage cutting-edge technology to extract valuable data from images automatically.",
-    heroImage: "/images/services/data-entry.jpg",
+    heroImage: `https://www.uniquesdata.com/wp-content/uploads/2024/06/Image-Data-Entry-Services-by-Uniquesdata.png`,
     whatWeOffer: [
       "AI-powered image recognition",
       "Text extraction from images",
@@ -162,7 +162,7 @@ export const servicesData: Service[] = [
     heroTitle: "Enterprise Data Capture Services",
     heroDescription:
       "Automate data collection and processing with our intelligent capture solutions.",
-    heroImage: "/images/services/data-entry.jpg",
+    heroImage: "https://salientprocess.com/wp-content/uploads/2023/06/01-What-Is-Data-Capture.jpg.webp",
     whatWeOffer: [
       "Automated form recognition",
       "Multi-page document processing",
@@ -208,7 +208,7 @@ export const servicesData: Service[] = [
     heroTitle: "Expert Product Upload & Listing Services",
     heroDescription:
       "Get your products live on e-commerce platforms faster with our professional listing services.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "https://samyakonline.biz/theme/img/aws-services.jpg",
     whatWeOffer: [
       "Multi-platform product uploads",
       "Bulk inventory management",
@@ -251,7 +251,7 @@ export const servicesData: Service[] = [
     heroTitle: "High-Converting Product Listings",
     heroDescription:
       "Create compelling product listings that drive sales on your e-commerce store.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "https://samyakonline.biz/theme/img/aws-services.jpg",
     whatWeOffer: [
       "SEO-optimized descriptions",
       "Professional product photography",
@@ -294,7 +294,7 @@ export const servicesData: Service[] = [
     heroTitle: "Professional Catalog Management",
     heroDescription:
       "Keep your product catalog organized, updated, and optimized for maximum performance.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "https://anchanto.com/wp-content/uploads/2021/10/Achieving_greater_sales_with_better_listing_management-5.jpg",
     whatWeOffer: [
       "Ongoing catalog updates",
       "Inventory synchronization",
@@ -338,7 +338,7 @@ export const servicesData: Service[] = [
     heroTitle: "Catalog Data Processing Services",
     heroDescription:
       "Transform your product catalogs into platform-ready formats efficiently.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "https://anchanto.com/wp-content/uploads/2021/10/Tips_for_creating_an_engaging_catalogue-5.jpg",
     whatWeOffer: [
       "Format conversion",
       "Data validation",
@@ -381,7 +381,7 @@ export const servicesData: Service[] = [
     heroTitle: "Professional Magento Product Upload",
     heroDescription:
       "Get your products loaded into Magento quickly and correctly with our expert service.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "https://3.imimg.com/data3/IL/IO/MY-11110854/magento-product-upload-services-250x250.jpg",
     whatWeOffer: [
       "Bulk product imports",
       "Attribute mapping",
@@ -424,7 +424,7 @@ export const servicesData: Service[] = [
     heroTitle: "Shopify Product Listing Services",
     heroDescription:
       "Launch your Shopify store with perfectly optimized product listings.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "https://5.imimg.com/data5/SELLER/Default/2024/10/459933219/OW/GM/DZ/2685597/shopify-product-listing-service.jpg",
     whatWeOffer: [
       "Complete product uploads",
       "Theme customization",
@@ -467,7 +467,7 @@ export const servicesData: Service[] = [
     heroTitle: "WooCommerce Product Upload Services",
     heroDescription:
       "Get your WordPress WooCommerce store populated with products professionally.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "https://www.amazonlistingservice.com/wp-content/uploads/2022/05/how-can-amazon-product-upload-services-accelerate-your-sales.jpg",
     whatWeOffer: [
       "Bulk product imports",
       "Plugin configuration",
