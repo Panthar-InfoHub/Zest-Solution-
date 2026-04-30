@@ -186,7 +186,7 @@ export function Hero() {
                   className="rounded-full gap-2 sm:gap-3 px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base hover:bg-muted w-full sm:w-auto"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span>+91 8484099961</span>
+                  <span>+91 6394239351</span>
                 </Button>
               </motion.div>
             </motion.div>

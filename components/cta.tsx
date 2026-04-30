@@ -94,8 +94,8 @@ export function CTA() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-bold mb-1 text-sm sm:text-base">Call Us</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground truncate">+91 8484099961</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground truncate">+91 7042163504</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground truncate">+91 6394239351</p>
+                    {/* <p className="text-xs sm:text-sm text-muted-foreground truncate">+91 7042163504</p> */}
                   </div>
                 </div>
               </Card>
@@ -107,7 +107,7 @@ export function CTA() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-bold mb-1 text-sm sm:text-base">Email Us</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground truncate">info@zestsolution.com</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground truncate">connect@zestsolutions.in</p>
                   </div>
                 </div>
               </Card>
