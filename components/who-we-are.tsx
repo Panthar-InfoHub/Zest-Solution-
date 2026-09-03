@@ -139,8 +139,8 @@ export function WhoWeAre() {
               <div className="relative pt-[56.25%] bg-black">
                 <iframe
                   className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&fs=1"
-                  title="YouTube video player"
+                  src="https://www.youtube.com/embed/9nl0w7Gb6p4?rel=0&modestbranding=1&fs=1"
+                  title="About Zest Solutions Video"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
