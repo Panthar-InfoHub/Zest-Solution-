@@ -6,7 +6,6 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { WeManageMegamenu } from "./we-manage-megamenu";
 import { WeMarketMegamenu } from "./we-market-megamenu";
-import { ToolsMegamenu } from "./tools-megamenu";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
@@ -15,7 +14,6 @@ export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isManageMegamenuOpen, setIsManageMegamenuOpen] = useState(false);
   const [isMarketMegamenuOpen, setIsMarketMegamenuOpen] = useState(false);
-  const [isToolsMegamenuOpen, setIsToolsMegamenuOpen] = useState(false);
   const { scrollY } = useScroll();
 
   const navRef = useRef<HTMLElement>(null);
@@ -33,7 +31,6 @@ export function Navigation() {
       if (navRef.current && !navRef.current.contains(event.target as Node)) {
         setIsManageMegamenuOpen(false);
         setIsMarketMegamenuOpen(false);
-        setIsToolsMegamenuOpen(false);
       }
     };
 
@@ -48,30 +45,45 @@ export function Navigation() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/", label: "About Us" },
+    { href: "#about", label: "About Us" },
     { href: "#", label: "We Manage" },
     { href: "#", label: "We Market" },
-    { href: "#", label: "Tools" },
   ];
 
   const toggleMegamenu = (label: string) => {
     if (label === "We Manage") {
       setIsManageMegamenuOpen(!isManageMegamenuOpen);
       setIsMarketMegamenuOpen(false);
-      setIsToolsMegamenuOpen(false);
     } else if (label === "We Market") {
       setIsMarketMegamenuOpen(!isMarketMegamenuOpen);
       setIsManageMegamenuOpen(false);
-      setIsToolsMegamenuOpen(false);
-    } else if (label === "Tools") {
-      setIsToolsMegamenuOpen(!isToolsMegamenuOpen);
-      setIsManageMegamenuOpen(false);
-      setIsMarketMegamenuOpen(false);
     } else {
       setIsManageMegamenuOpen(false);
       setIsMarketMegamenuOpen(false);
-      setIsToolsMegamenuOpen(false);
     }
+  };
+
+  const handleGetStartedClick = (e: React.MouseEvent | React.TouchEvent) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+    setIsManageMegamenuOpen(false);
+    setIsMarketMegamenuOpen(false);
+
+    setTimeout(() => {
+      const ctaElement = document.getElementById("cta");
+      if (ctaElement) {
+        const headerOffset = 90;
+        const elementPosition = ctaElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      } else {
+        window.location.href = "/#cta";
+      }
+    }, 150);
   };
 
   return (
@@ -96,7 +108,6 @@ export function Navigation() {
             onClick={() => {
               setIsManageMegamenuOpen(false);
               setIsMarketMegamenuOpen(false);
-              setIsToolsMegamenuOpen(false);
             }}
           >
             <motion.div
@@ -135,28 +146,25 @@ export function Navigation() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   onClick={(e) => {
-                    if (link.label === "We Manage" || link.label === "We Market" || link.label === "Tools") {
+                    if (link.label === "We Manage" || link.label === "We Market") {
                       e.preventDefault();
                       toggleMegamenu(link.label);
                     } else {
                       setIsManageMegamenuOpen(false);
                       setIsMarketMegamenuOpen(false);
-                      setIsToolsMegamenuOpen(false);
                     }
                   }}
                   className="relative text-base font-semibold text-foreground/70 hover:text-foreground transition-colors flex items-center gap-1 tracking-tight cursor-pointer"
                 >
                   {link.label}
                   {(link.label === "We Manage" ||
-                    link.label === "We Market" ||
-                    link.label === "Tools") && (
+                    link.label === "We Market") && (
                       <motion.div
                         animate={{
                           rotate:
                             (link.label === "We Manage" &&
                               isManageMegamenuOpen) ||
-                              (link.label === "We Market" && isMarketMegamenuOpen) ||
-                              (link.label === "Tools" && isToolsMegamenuOpen)
+                              (link.label === "We Market" && isMarketMegamenuOpen)
                               ? 180
                               : 0,
                         }}
@@ -171,7 +179,6 @@ export function Navigation() {
             ))}
             <WeManageMegamenu isOpen={isManageMegamenuOpen} />
             <WeMarketMegamenu isOpen={isMarketMegamenuOpen} />
-            <ToolsMegamenu isOpen={isToolsMegamenuOpen} />
             {/* <ThemeToggle /> */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -180,12 +187,19 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button
-                size="sm"
-                className="rounded-full bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 shadow-lg shadow-secondary/25 transition-all"
+              <a
+                href="#cta"
+                onClick={handleGetStartedClick}
+                className="cursor-pointer"
               >
-                Get Started
-              </Button>
+                <Button
+                  type="button"
+                  size="sm"
+                  className="rounded-full bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 shadow-lg shadow-secondary/25 transition-all cursor-pointer"
+                >
+                  Get Started
+                </Button>
+              </a>
             </motion.div>
           </div>
 
@@ -247,12 +261,19 @@ export function Navigation() {
               transition={{ delay: navLinks.length * 0.1 }}
               className="pt-2"
             >
-              <Button
-                size="sm"
-                className="w-full rounded-full bg-gradient-to-r from-secondary to-accent"
+              <a
+                href="#cta"
+                onClick={handleGetStartedClick}
+                className="block w-full cursor-pointer"
               >
-                Get Started
-              </Button>
+                <Button
+                  type="button"
+                  size="sm"
+                  className="w-full rounded-full bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 text-white font-semibold py-3 text-base shadow-md cursor-pointer"
+                >
+                  Get Started
+                </Button>
+              </a>
             </motion.div>
           </div>
         </motion.div>

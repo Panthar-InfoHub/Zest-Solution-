@@ -1,0 +1,11 @@
+{
+	"manuallyDisabled": false,
+	"cutoverAttemptedAtMs": 1788419791184,
+	"cutoverFence": {
+		"reason": "cutover to sqlite",
+		"at": "2026-09-03T07:16:31.286Z",
+		"tips": {
+			"C:\\Users\\nandi\\main-projects\\Zest_Solution\\Zest-Solution-": "c6d6b40e52b22d329a96a58c37748f9a10fd84be"
+		}
+	}
+}

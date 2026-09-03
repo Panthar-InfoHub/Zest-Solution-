@@ -33,7 +33,7 @@ export function Process() {
   ]
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+    <section id="process" ref={sectionRef} className="py-10 md:py-16 bg-muted/30 relative overflow-hidden scroll-mt-20">
       <motion.div
         className="absolute left-0 right-0 top-1/2 h-1 bg-gradient-to-r from-transparent via-secondary/20 to-transparent"
         initial={{ scaleX: 0 }}
@@ -69,14 +69,15 @@ export function Process() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
           {steps.map((step, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative h-full flex flex-col">
               <motion.div
+                className="h-full flex flex-col"
                 initial={{ opacity: 0, y: 50, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
                 transition={{ delay: 0.2 * index, duration: 0.6, type: "spring" }}
                 whileHover={{ y: -15, scale: 1.05 }}
               >
-                <Card className="p-4 sm:p-5 md:p-6 h-full hover:shadow-2xl transition-all duration-500 group relative overflow-hidden">
+                <Card className="p-4 sm:p-5 md:p-6 h-full flex-1 flex flex-col justify-between hover:shadow-2xl transition-all duration-500 group relative overflow-hidden">
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-accent/5"
                     initial={{ opacity: 0, scale: 0.8 }}

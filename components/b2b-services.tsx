@@ -53,7 +53,7 @@ export function B2BServices() {
   ]
 
   return (
-    <section id="b2b" ref={sectionRef} className="py-20 md:py-32 relative overflow-hidden">
+    <section id="b2b" ref={sectionRef} className="py-10 md:py-16 relative overflow-hidden">
       <motion.div
         className="absolute inset-0 opacity-5"
         style={{
@@ -78,7 +78,7 @@ export function B2BServices() {
           transition={{ duration: 0.8 }}
         >
           <motion.span
-            className="text-sm font-semibold px-4 py-2 bg-secondary/10 text-secondary rounded-full inline-block"
+            className="text-sm font-semibold px-4 py-2 bg-gradient-to-r from-secondary to-accent text-white shadow-lg shadow-secondary/25 rounded-full inline-block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.5 }}

@@ -5,22 +5,22 @@ export function Footer() {
 
   const links = {
     b2b: [
-      { label: "Marketing Services", href: "#" },
-      { label: "Sales Solutions", href: "#" },
-      { label: "Brand Activation", href: "#" },
-      { label: "Recruitment", href: "#" },
+      { label: "Marketing Services", href: "/services/search-engine-optimization-company" },
+      { label: "Sales Solutions", href: "/services/social-media-marketing" },
+      { label: "Brand Activation", href: "/services/web-content-writing" },
+      { label: "Recruitment", href: "/#b2b" },
     ],
     b2c: [
-      { label: "Account Management", href: "#" },
-      { label: "Platform Onboarding", href: "#" },
-      { label: "Store Branding", href: "#" },
-      { label: "SEO Services", href: "#" },
+      { label: "Account Management", href: "/services/amazon-marketplace" },
+      { label: "Platform Onboarding", href: "/services/product-upload-listing-services" },
+      { label: "Store Branding", href: "/services/shopify-product-listing" },
+      { label: "SEO Services", href: "/services/amazon-seo-services" },
     ],
     company: [
-      { label: "About Us", href: "#about" },
-      { label: "Our Process", href: "#" },
-      { label: "Case Studies", href: "#" },
-      { label: "Contact", href: "#contact" },
+      { label: "About Us", href: "/#about" },
+      { label: "Our Process", href: "/#process" },
+      { label: "Case Studies", href: "/#b2b" },
+      { label: "Contact", href: "/#cta" },
     ],
   }
 

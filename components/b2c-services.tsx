@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { ShoppingCart, Store, TrendingUp, CreditCard, Megaphone, Search, FileText, HeadphonesIcon } from "lucide-react"
 import { useRef } from "react"
@@ -8,6 +9,18 @@ import { motion, useInView } from "framer-motion"
 export function B2CServices() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { once: true, amount: 0.2 })
+
+  const marketplaceLogos = [
+    { name: "Amazon", logo: "/images/marketplaces/amazon.svg" },
+    { name: "Flipkart", logo: "/images/marketplaces/flipkart.svg" },
+    { name: "Myntra", logo: "/images/marketplaces/myntra.svg" },
+    { name: "Nykaa", logo: "/images/marketplaces/nykaa.svg" },
+    { name: "Ajio", logo: "/images/marketplaces/ajio.svg" },
+    { name: "Meesho", logo: "/images/marketplaces/meesho.svg" },
+    { name: "FirstCry", logo: "/images/marketplaces/firstcry.svg" },
+    { name: "eBay", logo: "/images/marketplaces/ebay.svg" },
+    { name: "Alibaba", logo: "/images/marketplaces/alibaba.svg" },
+  ]
 
   const services = [
     {
@@ -61,7 +74,7 @@ export function B2CServices() {
   ]
 
   return (
-    <section id="b2c" ref={sectionRef} className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+    <section id="b2c" ref={sectionRef} className="py-10 md:py-16 bg-muted/30 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden opacity-5">
         {["🛒", "📦", "💳", "📱", "🎯", "📊"].map((emoji, i) => (
           <motion.div
@@ -76,7 +89,7 @@ export function B2CServices() {
               rotate: [0, 10, -10, 0],
             }}
             transition={{
-              duration: 4 + Math.random() * 2,
+              duration: 4 + ((i * 7) % 3),
               repeat: Number.POSITIVE_INFINITY,
               delay: i * 0.5,
             }}
@@ -94,7 +107,7 @@ export function B2CServices() {
           transition={{ duration: 0.8 }}
         >
           <motion.span
-            className="text-sm font-semibold px-4 py-2 bg-accent/20 text-accent-foreground rounded-full inline-block"
+            className="text-sm font-semibold px-4 py-2 bg-gradient-to-r from-secondary to-accent text-white shadow-lg shadow-secondary/25 rounded-full inline-block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -178,30 +191,41 @@ export function B2CServices() {
         </div>
 
         <motion.div
-          className="text-center"
+          className="text-center overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <p className="text-sm text-muted-foreground mb-4">Supported Marketplaces</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {["Amazon", "Flipkart", "Myntra", "Nykaa", "Ajio", "FirstCry", "eBay", "Alibaba"].map((platform, idx) => (
-              <motion.span
-                key={platform}
-                className="px-4 py-2 bg-card border border-border rounded-lg text-sm font-medium cursor-pointer"
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 1.2 + idx * 0.05 }}
-                whileHover={{
-                  scale: 1.1,
-                  borderColor: "hsl(var(--accent))",
-                  backgroundColor: "hsl(var(--accent) / 0.1)",
-                }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {platform}
-              </motion.span>
-            ))}
+          <p className="text-sm font-medium text-muted-foreground mb-6">Supported Marketplaces</p>
+          <div className="relative w-full overflow-hidden py-2 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+            <motion.div
+              className="flex gap-4 w-max"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{
+                ease: "linear",
+                duration: 25,
+                repeat: Number.POSITIVE_INFINITY,
+              }}
+            >
+              {[...marketplaceLogos, ...marketplaceLogos].map((brand, idx) => (
+                <div
+                  key={`${brand.name}-${idx}`}
+                  className="flex items-center gap-3 px-5 py-3 bg-card border border-border rounded-xl shadow-sm hover:border-accent transition-colors flex-shrink-0 cursor-pointer"
+                >
+                  <div className="relative w-7 h-7 flex items-center justify-center">
+                    <Image
+                      src={brand.logo}
+                      alt={brand.name}
+                      width={28}
+                      height={28}
+                      className="object-contain max-h-7"
+                      style={{ width: "auto", height: "auto" }}
+                    />
+                  </div>
+                  <span className="text-sm font-semibold text-foreground whitespace-nowrap">{brand.name}</span>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </motion.div>
       </div>

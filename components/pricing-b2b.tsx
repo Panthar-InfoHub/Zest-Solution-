@@ -168,12 +168,14 @@ export function PricingB2B() {
                   </div>
 
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                    <Button
-                      className={`w-full mb-6 ${plan.popular ? "bg-gradient-to-r from-secondary to-accent" : ""}`}
-                      variant={plan.popular ? "default" : "outline"}
-                    >
-                      Get Started
-                    </Button>
+                    <a href="/#cta" className="w-full block">
+                      <Button
+                        className={`w-full mb-6 ${plan.popular ? "bg-gradient-to-r from-secondary to-accent" : ""}`}
+                        variant={plan.popular ? "default" : "outline"}
+                      >
+                        Get Started
+                      </Button>
+                    </a>
                   </motion.div>
 
                   <div className="space-y-3">
