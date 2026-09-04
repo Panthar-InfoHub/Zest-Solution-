@@ -1,420 +1,84 @@
-[2026-09-02T06:11:57.046Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-02T06:11:57.138Z] INFO  [Sync:VsCodeBootstrap] Memory Bank sync engine built (auto-sync off — manual only)
-[2026-09-02T06:11:57.145Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T06:11:57.146Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T06:11:57.587Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T06:11:57.844Z] INFO  [RepoProfile] manual-disable MIGRATE → manuallyDisabled=false (pid=30656, profile=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, fence=none, from=legacy-marker) ←  at fY (c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist\Extension.js:115:909) | at c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist\Extension.js:116:953 | at async Ef (c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist\Extension.js:3:5846) | at async uY (c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist\Extension.js:116:572) | at async yo (c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist\Extension.js:116:475) | at async t.refreshHookPathsIfStale (c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist\Extension.js:4021:18339)
-[2026-09-02T06:11:58.491Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T06:11:58.492Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T06:11:59.085Z] INFO  [RepoProfile] manual-disable read → false (by=migrate:legacy-marker, pid=30656, cwd=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=undefined fence=none)
-[2026-09-02T06:11:59.132Z] INFO  [bridge] Own dist-paths/antigravity-ide missing, stale, or pointing elsewhere — re-enabling
-[2026-09-02T06:11:59.132Z] INFO  [bridge] enable() called
-[2026-09-02T06:11:59.134Z] INFO  [Installer] Installing Jolli Memory hooks
-[2026-09-02T06:11:59.169Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T06:11:59.169Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T06:12:00.005Z] INFO  [SchemaV5Migration] Storage backend not initialized yet — skipping schema v5 migration (no data to migrate)
-[2026-09-02T06:12:00.005Z] INFO  [activate] Schema v5 migration: alreadyDone=false fresh=true migrated=0 skipped=0
-[2026-09-02T06:12:00.684Z] INFO  [DispatchScripts] Wrote resolve-dist-path, run-hook, and run-cli scripts to C:\Users\nandi\.jolli\jollimemory
-[2026-09-02T06:12:00.755Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T06:12:00.919Z] INFO  [DistPathWriter] Wrote dist-paths/antigravity-ide (version=0.99.17, distDir=c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist)
-[2026-09-02T06:12:00.963Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 3) to C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.agents\skills\jolli-recall\SKILL.md
-[2026-09-02T06:12:00.967Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 3) to C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.agents\skills\jolli-search\SKILL.md
-[2026-09-02T06:12:00.973Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 6) to C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.agents\skills\jolli-local-run\SKILL.md
-[2026-09-02T06:12:00.979Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 5) to C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.agents\skills\jolli-remote-run\SKILL.md
-[2026-09-02T06:12:00.984Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 9) to C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.agents\skills\jolli\SKILL.md
-[2026-09-02T06:12:01.193Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T06:12:01.194Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
-[2026-09-02T06:12:01.194Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-02T06:12:01.194Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
-[2026-09-02T06:12:01.194Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
-[2026-09-02T06:12:01.247Z] INFO  [GitExclude] Updated C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.git\info\exclude with 7 Jolli skill exclude paths
-[2026-09-02T06:12:01.253Z] INFO  [McpRegistration] Registered MCP server in C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.mcp.json
-[2026-09-02T06:12:01.288Z] INFO  [JsonMcpWriter] Registered MCP server in C:\Users\nandi\.gemini\settings.json
-[2026-09-02T06:12:01.298Z] INFO  [CodexTomlWriter] Registered Codex MCP server in C:\Users\nandi\.codex\config.toml
-[2026-09-02T06:12:01.333Z] INFO  [JsonMcpWriter] Registered MCP server in C:\Users\nandi\AppData\Roaming\Code\User\mcp.json
-[2026-09-02T06:12:01.338Z] INFO  [JsonMcpWriter] Registered MCP server in C:\Users\nandi\.gemini\config\mcp_config.json
-[2026-09-02T06:12:01.348Z] INFO  [GitHookInstaller] Git post-commit hook installed
-[2026-09-02T06:12:01.355Z] INFO  [GitHookInstaller] Git post-rewrite hook installed
-[2026-09-02T06:12:01.361Z] INFO  [GitHookInstaller] Git prepare-commit-msg hook installed
-[2026-09-02T06:12:01.368Z] INFO  [GitHookInstaller] Git post-merge hook installed
-[2026-09-02T06:12:01.376Z] INFO  [GitHookInstaller] Git pre-push hook installed
-[2026-09-02T06:12:01.381Z] INFO  [GeminiHookInstaller] Gemini AfterAgent hook installed
-[2026-09-02T06:12:01.383Z] INFO  [Installer] Skipping v5 migration on vscode-extension source — Extension.ts owns it with UI
-[2026-09-02T06:12:01.383Z] INFO  [Installer] Installation complete
-[2026-09-02T06:12:01.386Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T06:12:09.495Z] INFO  [Installer] Status: enabled=false, claude=false, git=false, geminiHook=true, hermesHook=false, worktreeHooks=false, sessions=0, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T06:12:09.496Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=0, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T06:12:09.509Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T06:12:09.510Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T06:12:09.602Z] INFO  [Installer] Status: enabled=false, claude=false, git=false, geminiHook=false, hermesHook=false, worktreeHooks=false, sessions=0, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T06:12:09.605Z] INFO  [initialLoad] All panels loaded — updating status bar
-[2026-09-02T06:12:09.605Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T06:12:10.703Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=0, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T06:12:11.051Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=0, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T06:12:11.060Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T06:12:11.086Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T06:12:11.086Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T06:12:12.715Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=0, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T06:12:12.717Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=30656, cwd=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-02T09:24:55.031Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"c:\\Users\\nandi\\main-projects\\Zest_Solution\\Zest-Solution-","extensionPath":"c:\\Users\\nandi\\.antigravity-ide\\extensions\\jolli.jollimemory-vscode-0.99.17-universal"}
-[2026-09-02T09:24:55.361Z] INFO  [initialLoad] Loading all panels
-[2026-09-02T09:24:55.688Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=7200, cwd=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-02T09:24:55.793Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
-[2026-09-02T09:24:55.793Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
-[2026-09-02T09:24:55.793Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
-[2026-09-02T09:24:55.793Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-02T09:24:56.184Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:24:56.286Z] INFO  [Sync:VsCodeBootstrap] Memory Bank sync engine built (auto-sync off — manual only)
-[2026-09-02T09:24:56.354Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:24:56.354Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T09:24:56.590Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:24:56.590Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:24:57.321Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:24:57.321Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T09:24:57.593Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:24:57.594Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T09:24:58.013Z] INFO  [SchemaV5Migration] Storage backend not initialized yet — skipping schema v5 migration (no data to migrate)
-[2026-09-02T09:24:58.013Z] INFO  [activate] Schema v5 migration: alreadyDone=false fresh=true migrated=0 skipped=0
-[2026-09-02T09:24:58.178Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:25:03.372Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:25:03.431Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:25:03.487Z] INFO  [initialLoad] All panels loaded — updating status bar
-[2026-09-02T09:25:03.498Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:25:03.499Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:25:03.499Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:25:05.792Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:25:06.069Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:25:06.077Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:25:06.086Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:25:06.087Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T09:25:07.103Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:26:56.811Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"c:\\Users\\nandi\\main-projects\\Zest_Solution\\Zest-Solution-","extensionPath":"c:\\Users\\nandi\\.antigravity-ide\\extensions\\jolli.jollimemory-vscode-0.99.17-universal"}
-[2026-09-02T09:26:57.184Z] INFO  [initialLoad] Loading all panels
-[2026-09-02T09:26:57.443Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=19512, cwd=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-02T09:26:57.447Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
-[2026-09-02T09:26:57.447Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
-[2026-09-02T09:26:57.447Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
-[2026-09-02T09:26:57.447Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-02T09:26:57.448Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:26:57.784Z] INFO  [Sync:VsCodeBootstrap] Memory Bank sync engine built (auto-sync off — manual only)
-[2026-09-02T09:26:57.905Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:26:57.905Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T09:26:58.104Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:26:58.105Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:26:58.552Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:26:58.553Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T09:26:58.873Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:26:58.873Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T09:26:59.301Z] INFO  [SchemaV5Migration] Storage backend not initialized yet — skipping schema v5 migration (no data to migrate)
-[2026-09-02T09:26:59.302Z] INFO  [activate] Schema v5 migration: alreadyDone=false fresh=true migrated=0 skipped=0
-[2026-09-02T09:26:59.557Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:27:00.595Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:27:00.598Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:27:00.651Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:27:00.653Z] INFO  [initialLoad] All panels loaded — updating status bar
-[2026-09-02T09:27:00.653Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:27:01.359Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:27:01.567Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T09:27:01.571Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T09:27:01.574Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T09:27:01.574Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-02T09:27:02.473Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T13:24:08.696Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
-[2026-09-02T13:24:08.697Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
-[2026-09-02T13:24:08.697Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-02T13:24:08.698Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
-[2026-09-02T13:24:08.704Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-02T13:24:08.704Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-02T13:24:12.808Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-02T13:24:22.494Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
-[2026-09-02T13:24:22.502Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=10344, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-02T13:24:22.624Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
-[2026-09-02T13:24:25.778Z] INFO  [RepoProfile] [trace=422ebd8ed7203c27c4350b70e21acb22] manual-disable read → false (by=manuallyDisabled, pid=16568, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-02T13:24:25.867Z] INFO  [PostCommitHook] [trace=422ebd8ed7203c27c4350b70e21acb22] Detected operation: commit
-[2026-09-02T13:24:26.031Z] INFO  [PostCommitHook] [trace=422ebd8ed7203c27c4350b70e21acb22] Enqueued: type=commit hash=377b022b
-[2026-09-02T13:24:26.032Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Launching background worker
-[2026-09-02T13:24:26.051Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Background worker spawned (PID: 31100)
-[2026-09-02T13:24:26.071Z] INFO  [EnsureGlobalDaemon] [trace=422ebd8ed7203c27c4350b70e21acb22] spawned global daemon ensure helper (pid 33716)
-[2026-09-02T13:29:26.299Z] INFO  [deactivate] Jolli Memory extension deactivating
-[2026-09-03T06:23:43.744Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"c:\\Users\\nandi\\main-projects\\Zest_Solution\\Zest-Solution-","extensionPath":"c:\\Users\\nandi\\.antigravity-ide\\extensions\\jolli.jollimemory-vscode-0.99.17-universal"}
-[2026-09-03T06:23:44.060Z] INFO  [initialLoad] Loading all panels
-[2026-09-03T06:23:44.402Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=33324, cwd=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-03T06:23:44.411Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
-[2026-09-03T06:23:44.411Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
-[2026-09-03T06:23:44.411Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
-[2026-09-03T06:23:44.411Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-03T06:23:44.413Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T06:23:44.956Z] INFO  [Sync:VsCodeBootstrap] Memory Bank sync engine built (auto-sync off — manual only)
-[2026-09-03T06:23:44.966Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T06:23:44.966Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T06:23:45.128Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T06:23:45.128Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T06:23:45.756Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T06:23:45.756Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T06:23:46.325Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T06:23:46.326Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T06:23:46.326Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T06:23:46.751Z] WARN  [ReadStorageResolver] createReadStorage: folder lacks index.json — falling back to orphan branch (migration incomplete, or folder wiped)
-[2026-09-03T06:23:46.830Z] INFO  [SchemaV5Migration] Storage backend not initialized yet — skipping schema v5 migration (no data to migrate)
-[2026-09-03T06:23:46.830Z] INFO  [activate] Schema v5 migration: alreadyDone=false fresh=true migrated=0 skipped=0
-[2026-09-03T06:23:46.960Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T06:23:47.789Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T06:23:47.791Z] INFO  [initialLoad] All panels loaded — updating status bar
-[2026-09-03T06:23:47.791Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T06:23:47.833Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T06:23:47.836Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T06:23:48.401Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T06:23:48.567Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T06:23:48.568Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T06:23:48.570Z] WARN  [CutoverRouter] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T06:23:48.570Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T06:23:49.265Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T07:16:12.640Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
-[2026-09-03T07:16:12.647Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=32428, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-03T07:16:12.988Z] INFO  [GitOperationDetector] Reset-squash detected: 1 commits (c44617de..377b022b)
-[2026-09-03T07:16:12.993Z] INFO  [SessionTracker] Saved squash-pending.json: 1 source hashes, parent c44617de
-[2026-09-03T07:16:12.994Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
-[2026-09-03T07:16:15.522Z] INFO  [RepoProfile] [trace=72d75a927a73d1d5569d49711d97a63d] manual-disable read → false (by=manuallyDisabled, pid=33340, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-03T07:16:15.525Z] INFO  [PostCommitHook] [trace=72d75a927a73d1d5569d49711d97a63d] Detected operation: squash
-[2026-09-03T07:16:15.709Z] INFO  [PostCommitHook] [trace=72d75a927a73d1d5569d49711d97a63d] Squash-pending validated: 1 source hashes
-[2026-09-03T07:16:15.712Z] INFO  [PostCommitHook] [trace=72d75a927a73d1d5569d49711d97a63d] Enqueued: type=squash hash=95db2335
-[2026-09-03T07:16:15.712Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Launching background worker
-[2026-09-03T07:16:15.730Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Background worker spawned (PID: 9572)
-[2026-09-03T07:16:15.749Z] INFO  [EnsureGlobalDaemon] [trace=72d75a927a73d1d5569d49711d97a63d] spawned global daemon ensure helper (pid 10892)
-[2026-09-03T07:16:18.233Z] INFO  [RepoProfile] [trace=72d75a927a73d1d5569d49711d97a63d] manual-disable read → false (by=manuallyDisabled, pid=9572, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
-[2026-09-03T07:16:18.237Z] WARN  [CutoverRouter] [trace=72d75a927a73d1d5569d49711d97a63d] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T07:16:18.238Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] === Queue worker started === node=22.21.0 kind=vscode-plugin source=antigravity-ide pkgVer=0.99.17 cliVer=0.99.17 dist=c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist
-[2026-09-03T07:16:18.248Z] WARN  [CutoverRouter] [trace=72d75a927a73d1d5569d49711d97a63d] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
-[2026-09-03T07:16:18.248Z] INFO  [StorageFactory] [trace=72d75a927a73d1d5569d49711d97a63d] StorageFactory.create: route=uncutover, projectPath=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:16:18.532Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Processing queue entry: type=commit hash=377b022b
-[2026-09-03T07:16:18.617Z] INFO  [GitOps] [trace=422ebd8ed7203c27c4350b70e21acb22] Commit 377b022b: feat: updated logo SVGs, restored WhatsApp contact number, a
-[2026-09-03T07:16:18.617Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Commit: 377b022b - feat: updated logo SVGs, restored WhatsApp contact number, added strict form validation, and fixed mobile navigation (75ms)
-[2026-09-03T07:16:19.033Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Discovered 2 Antigravity session(s)
-[2026-09-03T07:16:19.058Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Transcript source: session=02edae17-9b20-4533-b048-6aaf263908e8, lines=0→1166, entries=58
-[2026-09-03T07:16:19.070Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Transcript source: session=cefa438e-18c9-4152-93e0-b43f2447c9ce, lines=0→402, entries=22
-[2026-09-03T07:16:19.231Z] WARN  [GitOps] [trace=422ebd8ed7203c27c4350b70e21acb22] Diff exceeds 150000-char budget (1164858 chars) — prepending --stat file list and truncating body
-[2026-09-03T07:16:19.293Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Git diff: 32 files changed, +2457 -717 (222ms)
-[2026-09-03T07:16:19.305Z] INFO  [TranscriptReader] [trace=422ebd8ed7203c27c4350b70e21acb22] Conversation budget reached: kept 61/80 transcript entries (~148280/150000 chars); older turns dropped
-[2026-09-03T07:16:19.537Z] WARN  [GitOps] [trace=422ebd8ed7203c27c4350b70e21acb22] Diff exceeds 60000-char budget (1164858 chars) — prepending --stat file list and truncating body
-[2026-09-03T07:16:19.545Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
-[2026-09-03T07:16:19.547Z] INFO  [Summarizer] [trace=422ebd8ed7203c27c4350b70e21acb22] Generating summary for commit 377b022b
-[2026-09-03T07:16:19.547Z] INFO  [Summarizer] [trace=422ebd8ed7203c27c4350b70e21acb22] Context: transcript=80, files=32, lines=2457+717
-[2026-09-03T07:16:19.547Z] INFO  [LlmClient] [trace=422ebd8ed7203c27c4350b70e21acb22] LLM call: action=summarize source=local-agent
-[2026-09-03T07:16:19.657Z] INFO  [ExecutableResolver] [trace=422ebd8ed7203c27c4350b70e21acb22] claude: `where claude` found nothing (Command failed: where claude
+[2026-09-04T02:11:39.028Z] INFO  [RepoProfile] manual-disable read → false (by=migrate:legacy-marker, pid=24564, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=undefined fence=none)
+[2026-09-04T02:11:39.084Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-09-04T02:14:04.689Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-09-04T02:14:04.819Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-09-04T02:14:08.670Z] INFO  [PostCommitHook] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Detected operation: commit
+[2026-09-04T02:14:08.778Z] INFO  [PostCommitHook] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Enqueued: type=commit hash=eb39af09
+[2026-09-04T02:14:08.778Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Launching background worker
+[2026-09-04T02:14:08.791Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Background worker spawned (PID: 26292)
+[2026-09-04T02:14:09.137Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] === Queue worker started === node=22.21.0 kind=cli source=cli pkgVer=0.99.10 cliVer=0.99.10 dist=C:\Users\nandi\AppData\Local\npm-cache\_npx\9fa90fc0e851d179\node_modules\@jolli.ai\cli\dist
+[2026-09-04T02:14:09.145Z] INFO  [StorageFactory] [trace=23686268f02e9a21a42b6fd0fbbe2be1] StorageFactory.create: storageMode=dual-write, projectPath=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
+[2026-09-04T02:14:09.370Z] INFO  [StorageFactory] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Storage mode: dual-write (primary=orphan, shadow=folder)
+[2026-09-04T02:14:09.374Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Processing queue entry: type=commit hash=eb39af09
+[2026-09-04T02:14:09.421Z] INFO  [GitOps] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Commit eb39af09: feat: implement responsive navigation component and add init
+[2026-09-04T02:14:09.421Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Commit: eb39af09 - feat: implement responsive navigation component and add initial configuration files (42ms)
+[2026-09-04T02:14:09.702Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Discovered 4 Antigravity session(s)
+[2026-09-04T02:14:09.713Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Transcript source: session=02edae17-9b20-4533-b048-6aaf263908e8, lines=0→1166, entries=58
+[2026-09-04T02:14:09.719Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Transcript source: session=545e900e-a588-456d-ba89-662570eb2439, lines=0→25, entries=6
+[2026-09-04T02:14:09.725Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Transcript source: session=5487df68-3642-4e4b-860b-755b85ffc6f5, lines=0→57, entries=2
+[2026-09-04T02:14:09.733Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Transcript source: session=eaf3fa3c-ec3a-4371-bb5a-abc72f613b54, lines=0→212, entries=14
+[2026-09-04T02:14:09.839Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Git diff: 1 files changed, +41 -26 (101ms)
+[2026-09-04T02:14:09.954Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-09-04T02:14:09.956Z] INFO  [Summarizer] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Generating summary for commit eb39af09
+[2026-09-04T02:14:11.942Z] INFO  [PrePushHook] [trace=4aedcc71cec211cff90bdaca548956d0] pre-push hook: remote=origin budget=3000ms
+[2026-09-04T02:14:09.956Z] INFO  [Summarizer] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Context: transcript=80, files=1, lines=41+26
+[2026-09-04T02:14:09.956Z] INFO  [LlmClient] [trace=23686268f02e9a21a42b6fd0fbbe2be1] LLM call: action=summarize source=local-agent
+[2026-09-04T02:14:10.094Z] INFO  [ExecutableResolver] [trace=23686268f02e9a21a42b6fd0fbbe2be1] claude: `where claude` found nothing (Command failed: where claude
 INFO: Could not find files for the given pattern(s).
 )
-[2026-09-03T07:16:19.659Z] INFO  [ExecutableResolver] [trace=422ebd8ed7203c27c4350b70e21acb22] claude discovery: 1 candidate(s)=[C:\Users\nandi\.local\bin\claude.exe]; shims=[(none)]; knownPaths present=[C:\Users\nandi\.local\bin\claude.exe] (searched 28 PATH entries)
-[2026-09-03T07:16:22.826Z] INFO  [ExecutableResolver] [trace=422ebd8ed7203c27c4350b70e21acb22] Resolved claude executable: C:\Users\nandi\.local\bin\claude.exe (v2.1.119)
-[2026-09-03T07:16:24.627Z] WARN  [LocalAgentRunner] [trace=422ebd8ed7203c27c4350b70e21acb22] Local agent exited 1 but produced stdout; deferring to the parser. stderr tail: 
-[2026-09-03T07:16:24.628Z] ERROR [LlmClient] [trace=422ebd8ed7203c27c4350b70e21acb22] Local-agent call failed: action=summarize tool=claude-code exe=C:\Users\nandi\.local\bin\claude.exe elapsedMs=1802 errorName=LocalAgentAuthError error=Claude Code returned an error (status 0): Not logged in · Please run /login
-[2026-09-03T07:16:24.629Z] WARN  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] First API attempt failed: Claude Code returned an error (status 0): Not logged in · Please run /login. Retrying in 2000ms...
-[2026-09-03T07:16:26.638Z] INFO  [Summarizer] [trace=422ebd8ed7203c27c4350b70e21acb22] Generating summary for commit 377b022b
-[2026-09-03T07:16:26.638Z] INFO  [Summarizer] [trace=422ebd8ed7203c27c4350b70e21acb22] Context: transcript=80, files=32, lines=2457+717
-[2026-09-03T07:16:26.639Z] INFO  [LlmClient] [trace=422ebd8ed7203c27c4350b70e21acb22] LLM call: action=summarize source=local-agent
-[2026-09-03T07:16:28.004Z] WARN  [LocalAgentRunner] [trace=422ebd8ed7203c27c4350b70e21acb22] Local agent exited 1 but produced stdout; deferring to the parser. stderr tail: 
-[2026-09-03T07:16:28.005Z] ERROR [LlmClient] [trace=422ebd8ed7203c27c4350b70e21acb22] Local-agent call failed: action=summarize tool=claude-code exe=C:\Users\nandi\.local\bin\claude.exe elapsedMs=1366 errorName=LocalAgentAuthError error=Claude Code returned an error (status 0): Not logged in · Please run /login
-[2026-09-03T07:16:28.006Z] ERROR [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] API call failed after retry: Claude Code returned an error (status 0): Not logged in · Please run /login
-[2026-09-03T07:16:28.006Z] WARN  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Saving summary with empty topics + local-agent-auth marker for commit 377b022b
-[2026-09-03T07:16:28.006Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] API summary generated (8.5s)
-[2026-09-03T07:16:28.007Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Plan registry scan: found 0 uncommitted slug(s) on changes-features: []
-[2026-09-03T07:16:28.008Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Plan association: detected 0 slug(s) from transcripts: []
-[2026-09-03T07:16:28.008Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Note registry scan: found 0 uncommitted note(s) on changes-features: []
-[2026-09-03T07:16:28.008Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Note association: detected 0 note(s): []
-[2026-09-03T07:16:28.008Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Reference association: detected 0 ref(s) for branch changes-features
-[2026-09-03T07:16:28.012Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Summary built for 377b022b: recap=no, topics=0, plans=absent, notes=absent, references=absent
-[2026-09-03T07:16:28.332Z] INFO  [GitOps] [trace=422ebd8ed7203c27c4350b70e21acb22] Creating orphan branch 'jollimemory/summaries/v3' using plumbing commands
-[2026-09-03T07:16:28.562Z] INFO  [GitOps] [trace=422ebd8ed7203c27c4350b70e21acb22] Orphan branch 'jollimemory/summaries/v3' created successfully
-[2026-09-03T07:16:28.930Z] INFO  [GitOps] [trace=422ebd8ed7203c27c4350b70e21acb22] Updated branch 'jollimemory/summaries/v3': 4 written, 0 deleted (via fast-import)
-[2026-09-03T07:16:28.936Z] INFO  [MetadataManager] [trace=422ebd8ed7203c27c4350b70e21acb22] Branch mapping created: changes-features → changes-features
-[2026-09-03T07:16:28.952Z] INFO  [MetadataManager] [trace=422ebd8ed7203c27c4350b70e21acb22] Manifest updated: changes-features/feat-updated-logo-svgs-restored-whatsapp-contact-n-377b022b.md (commit)
-[2026-09-03T07:16:28.952Z] INFO  [FolderStorage] [trace=422ebd8ed7203c27c4350b70e21acb22] Markdown generated: changes-features/feat-updated-logo-svgs-restored-whatsapp-contact-n-377b022b.md
-[2026-09-03T07:16:28.957Z] INFO  [FolderStorage] [trace=422ebd8ed7203c27c4350b70e21acb22] Wrote 4 files, deleted 0 (Add summary for 377b022b: feat: updated logo SVGs, restored WhatsApp contact)
-[2026-09-03T07:16:28.958Z] INFO  [SummaryStore] [trace=422ebd8ed7203c27c4350b70e21acb22] Summary stored successfully for commit 377b022b
-[2026-09-03T07:16:28.978Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] Summary stored successfully for commit 377b022b (966ms, 0 plans, 0 notes, 0 references)
-[2026-09-03T07:16:28.979Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] === Pipeline completed in 10.4s ===
-[2026-09-03T07:16:28.979Z] INFO  [QueueWorker] [trace=422ebd8ed7203c27c4350b70e21acb22] === Summary content (0 topics) ===
-[2026-09-03T07:16:29.032Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Processing queue entry: type=squash hash=95db2335
-[2026-09-03T07:16:29.136Z] INFO  [GitOps] [trace=72d75a927a73d1d5569d49711d97a63d] Commit 95db2335: feat: implement responsive navigation component with megamen
-[2026-09-03T07:16:29.145Z] INFO  [Summarizer] [trace=72d75a927a73d1d5569d49711d97a63d] generateSquashConsolidation: all sources have no topics or recap -- returning no-content
-[2026-09-03T07:16:29.146Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Squash consolidation for 95db2335: sources=1, topics 0 → 0, recap=no, status=mechanical
-[2026-09-03T07:16:29.151Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Plan registry scan: found 0 uncommitted slug(s) on changes-features: []
-[2026-09-03T07:16:29.151Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Plan association: detected 0 slug(s) from transcripts: []
-[2026-09-03T07:16:29.151Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Note registry scan: found 0 uncommitted note(s) on changes-features: []
-[2026-09-03T07:16:29.151Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Note association: detected 0 note(s): []
-[2026-09-03T07:16:29.152Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Reference association: detected 0 ref(s) for branch changes-features
-[2026-09-03T07:16:29.157Z] INFO  [SummaryStore] [trace=72d75a927a73d1d5569d49711d97a63d] Merging 1 summaries into 95db2335
-[2026-09-03T07:16:29.898Z] INFO  [GitOps] [trace=72d75a927a73d1d5569d49711d97a63d] Updated branch 'jollimemory/summaries/v3': 3 written, 0 deleted (via fast-import)
-[2026-09-03T07:16:29.910Z] INFO  [MetadataManager] [trace=72d75a927a73d1d5569d49711d97a63d] Manifest updated: changes-features/feat-implement-responsive-navigation-component-wit-95db2335.md (commit)
-[2026-09-03T07:16:29.910Z] INFO  [FolderStorage] [trace=72d75a927a73d1d5569d49711d97a63d] Markdown generated: changes-features/feat-implement-responsive-navigation-component-wit-95db2335.md
-[2026-09-03T07:16:29.915Z] INFO  [FolderStorage] [trace=72d75a927a73d1d5569d49711d97a63d] Cleaned up superseded MD: changes-features/feat-updated-logo-svgs-restored-whatsapp-contact-n-377b022b.md
-[2026-09-03T07:16:29.918Z] INFO  [FolderStorage] [trace=72d75a927a73d1d5569d49711d97a63d] Wrote 3 files, deleted 0 (Merge summaries [377b022b] → 95db2335)
-[2026-09-03T07:16:29.918Z] INFO  [SummaryStore] [trace=72d75a927a73d1d5569d49711d97a63d] Summaries merged: [377b022b] → 95db2335 (1 children, 0 orphaned docs, 1 unresolved orphan hashes)
-[2026-09-03T07:16:29.972Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] Processed 2 queue entries
-[2026-09-03T07:16:29.975Z] INFO  [PushExecutor] [trace=72d75a927a73d1d5569d49711d97a63d] Post-queue push trigger: scheduling drain for 2 newly generated summar(ies)
-[2026-09-03T07:16:30.335Z] INFO  [GitOps] [trace=72d75a927a73d1d5569d49711d97a63d] Commit 377b022b: feat: updated logo SVGs, restored WhatsApp contact number, a
-[2026-09-03T07:16:30.465Z] INFO  [GitOps] [trace=72d75a927a73d1d5569d49711d97a63d] Commit 95db2335: feat: implement responsive navigation component with megamen
-[2026-09-03T07:16:30.706Z] INFO  [StorageFactory] [trace=72d75a927a73d1d5569d49711d97a63d] StorageFactory.create: route=uncutover, projectPath=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:16:31.140Z] INFO  [QueueWorker] [trace=72d75a927a73d1d5569d49711d97a63d] === Queue worker finished ===
-[2026-09-03T07:16:31.183Z] INFO  [SessionStartHook] [trace=72d75a927a73d1d5569d49711d97a63d] Briefing cache not warmed — nothing to brief on this branch
-[2026-09-03T07:16:31.274Z] INFO  [AutoCutover] [trace=72d75a927a73d1d5569d49711d97a63d] auto-cutover: attempting for C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:16:31.339Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
-[2026-09-03T07:16:31.340Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
-[2026-09-03T07:16:31.340Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
-[2026-09-03T07:16:31.340Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-03T07:16:32.269Z] INFO  [SotImport] [trace=72d75a927a73d1d5569d49711d97a63d] orphan import for https://github.com/panthar-infohub/zest-solution-: %o
-[2026-09-03T07:16:32.926Z] INFO  [CutoverEngine] [trace=72d75a927a73d1d5569d49711d97a63d] cutover committed for https://github.com/panthar-infohub/zest-solution- at version 1
-[2026-09-03T07:16:32.927Z] INFO  [AutoCutover] [trace=72d75a927a73d1d5569d49711d97a63d] auto-cutover: C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution- is now served from SQLite
-[2026-09-03T07:16:54.528Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:25:27.573Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
-[2026-09-03T07:25:27.578Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=21672, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-03T07:16:31.286Z)
-[2026-09-03T07:25:27.882Z] INFO  [GitOperationDetector] Reset-squash detected: 1 commits (c44617de..95db2335)
-[2026-09-03T07:25:27.885Z] INFO  [SessionTracker] Saved squash-pending.json: 1 source hashes, parent c44617de
-[2026-09-03T07:25:27.886Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
-[2026-09-03T07:25:28.281Z] INFO  [RepoProfile] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] manual-disable read → false (by=manuallyDisabled, pid=11616, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-03T07:16:31.286Z)
-[2026-09-03T07:25:28.283Z] INFO  [PostCommitHook] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Detected operation: squash
-[2026-09-03T07:25:28.482Z] INFO  [PostCommitHook] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Squash-pending validated: 1 source hashes
-[2026-09-03T07:25:28.484Z] INFO  [PostCommitHook] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Enqueued: type=squash hash=08a93652
-[2026-09-03T07:25:28.484Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Launching background worker
-[2026-09-03T07:25:28.495Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Background worker spawned (PID: 28904)
-[2026-09-03T07:25:28.509Z] INFO  [EnsureGlobalDaemon] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] spawned global daemon ensure helper (pid 28312)
-[2026-09-03T07:25:28.678Z] INFO  [RepoProfile] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] manual-disable read → false (by=manuallyDisabled, pid=28904, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-03T07:16:31.286Z)
-[2026-09-03T07:25:28.791Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] === Queue worker started === node=22.21.0 kind=vscode-plugin source=antigravity-ide pkgVer=0.99.17 cliVer=0.99.17 dist=c:\Users\nandi\.antigravity-ide\extensions\jolli.jollimemory-vscode-0.99.17-universal\dist
-[2026-09-03T07:25:28.803Z] INFO  [StorageFactory] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] StorageFactory.create: route=cutover, projectPath=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:25:29.180Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Processing queue entry: type=squash hash=08a93652
-[2026-09-03T07:25:29.242Z] INFO  [GitOps] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Commit 08a93652: feat: implement responsive navigation component with megamen
-[2026-09-03T07:25:29.252Z] INFO  [Summarizer] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] generateSquashConsolidation: all sources have no topics or recap -- returning no-content
-[2026-09-03T07:25:29.252Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Squash consolidation for 08a93652: sources=1, topics 0 → 0, recap=no, status=mechanical
-[2026-09-03T07:25:29.261Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Plan registry scan: found 0 uncommitted slug(s) on changes-features: []
-[2026-09-03T07:25:29.262Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Plan association: detected 0 slug(s) from transcripts: []
-[2026-09-03T07:25:29.262Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Note registry scan: found 0 uncommitted note(s) on changes-features: []
-[2026-09-03T07:25:29.262Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Note association: detected 0 note(s): []
-[2026-09-03T07:25:29.262Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Reference association: detected 0 ref(s) for branch changes-features
-[2026-09-03T07:25:29.325Z] INFO  [SummaryStore] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Merging 1 summaries into 08a93652
-[2026-09-03T07:25:29.637Z] INFO  [MetadataManager] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Manifest updated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md (commit)
-[2026-09-03T07:25:29.637Z] INFO  [FolderStorage] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Markdown generated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md
-[2026-09-03T07:25:29.642Z] INFO  [FolderStorage] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Cleaned up superseded MD: changes-features/feat-implement-responsive-navigation-component-wit-95db2335.md
-[2026-09-03T07:25:29.647Z] INFO  [FolderStorage] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Wrote 3 files, deleted 0 (Merge summaries [95db2335] → 08a93652)
-[2026-09-03T07:25:29.648Z] INFO  [SummaryStore] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Summaries merged: [95db2335] → 08a93652 (1 children, 0 orphaned docs, 2 unresolved orphan hashes)
-[2026-09-03T07:25:29.664Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Processed 1 queue entries
-[2026-09-03T07:25:29.667Z] INFO  [PushExecutor] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
-[2026-09-03T07:25:29.920Z] INFO  [GitOps] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Commit 08a93652: feat: implement responsive navigation component with megamen
-[2026-09-03T07:25:30.050Z] INFO  [StorageFactory] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] StorageFactory.create: route=cutover, projectPath=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:25:30.376Z] INFO  [QueueWorker] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] === Queue worker finished ===
-[2026-09-03T07:25:30.382Z] INFO  [SessionStartHook] [trace=1ef4a62d73b2e0ecec97b2c6696c6dba] Briefing cache not warmed — nothing to brief on this branch
-[2026-09-03T07:25:30.543Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
-[2026-09-03T07:25:30.543Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
-[2026-09-03T07:25:30.543Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-03T07:25:30.543Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
-[2026-09-03T07:25:35.123Z] INFO  [PrePushHook] [trace=c0264baf88165abd86cc15fe5b29f577] pre-push hook: remote=origin budget=3000ms
-[2026-09-03T07:25:35.128Z] INFO  [RepoProfile] [trace=c0264baf88165abd86cc15fe5b29f577] manual-disable read → false (by=manuallyDisabled, pid=30392, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-03T07:16:31.286Z)
-[2026-09-03T07:25:35.201Z] INFO  [PushPendingStore] [trace=c0264baf88165abd86cc15fe5b29f577] Enqueued 1 new push-pending entries (branch=changes-features)
-[2026-09-03T07:25:35.207Z] INFO  [PrePushHook] [trace=c0264baf88165abd86cc15fe5b29f577] pre-push: recorded 1 commit(s) across 1 pushed ref(s)
-[2026-09-03T07:25:35.279Z] INFO  [PrePushHook] [trace=c0264baf88165abd86cc15fe5b29f577] pre-push: worker spawned (pushId=c0264baf88165abd86cc15fe5b29f577) — watching for 2838ms
-[2026-09-03T07:25:36.356Z] INFO  [RepoProfile] [trace=c0264baf88165abd86cc15fe5b29f577] manual-disable read → false (by=manuallyDisabled, pid=508, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-03T07:16:31.286Z)
-[2026-09-03T07:25:36.368Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): 1 pending entr(ies) (filtered to 1 hash(es))
-[2026-09-03T07:25:36.441Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): claimed 1/1 candidate(s)
-[2026-09-03T07:25:36.560Z] INFO  [StorageFactory] [trace=c0264baf88165abd86cc15fe5b29f577] StorageFactory.create: route=cutover, projectPath=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:25:36.851Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): triage — withMemory=1 noMemory=0 mergedChildren=0
-[2026-09-03T07:25:37.263Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): pushing 1 commit(s)
-[2026-09-03T07:25:38.167Z] INFO  [PrePushHook] [trace=c0264baf88165abd86cc15fe5b29f577] pre-push: watch timed out — 0 of 1 settled
-[2026-09-03T07:25:40.092Z] INFO  [MetadataManager] [trace=c0264baf88165abd86cc15fe5b29f577] Manifest updated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md (commit)
-[2026-09-03T07:25:40.092Z] INFO  [FolderStorage] [trace=c0264baf88165abd86cc15fe5b29f577] Markdown generated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md
-[2026-09-03T07:25:40.098Z] INFO  [FolderStorage] [trace=c0264baf88165abd86cc15fe5b29f577] Wrote 3 files, deleted 0 (Overwrite summary for 08a93652: feat: implement responsive navigation component wi)
-[2026-09-03T07:25:40.098Z] INFO  [SummaryStore] [trace=c0264baf88165abd86cc15fe5b29f577] Summary stored successfully for commit 08a93652
-[2026-09-03T07:25:40.100Z] INFO  [JolliMemoryPushOrchestrator] [trace=c0264baf88165abd86cc15fe5b29f577] Deferring orphan cleanup for 08a93652 — this push is not confirmed on the remote yet
-[2026-09-03T07:25:40.156Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): pushed=1 failed=0
-[2026-09-03T07:25:40.157Z] INFO  [PrePushWorker] [trace=c0264baf88165abd86cc15fe5b29f577] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=0
-[2026-09-03T07:25:40.161Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): 1 pending entr(ies)
-[2026-09-03T07:25:41.669Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): claimed 1/1 candidate(s)
-[2026-09-03T07:25:41.682Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): triage — withMemory=1 noMemory=0 mergedChildren=0
-[2026-09-03T07:25:42.042Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): pushing 1 commit(s)
-[2026-09-03T07:25:42.866Z] INFO  [MetadataManager] [trace=c0264baf88165abd86cc15fe5b29f577] Manifest updated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md (commit)
-[2026-09-03T07:25:42.866Z] INFO  [FolderStorage] [trace=c0264baf88165abd86cc15fe5b29f577] Markdown generated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md
-[2026-09-03T07:25:42.872Z] INFO  [FolderStorage] [trace=c0264baf88165abd86cc15fe5b29f577] Wrote 3 files, deleted 0 (Overwrite summary for 08a93652: feat: implement responsive navigation component wi)
-[2026-09-03T07:25:42.873Z] INFO  [SummaryStore] [trace=c0264baf88165abd86cc15fe5b29f577] Summary stored successfully for commit 08a93652
-[2026-09-03T07:25:43.110Z] INFO  [MetadataManager] [trace=c0264baf88165abd86cc15fe5b29f577] Manifest updated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md (commit)
-[2026-09-03T07:25:43.110Z] INFO  [FolderStorage] [trace=c0264baf88165abd86cc15fe5b29f577] Markdown generated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md
-[2026-09-03T07:25:43.117Z] INFO  [FolderStorage] [trace=c0264baf88165abd86cc15fe5b29f577] Wrote 3 files, deleted 0 (Overwrite summary for 08a93652: feat: implement responsive navigation component wi)
-[2026-09-03T07:25:43.118Z] INFO  [SummaryStore] [trace=c0264baf88165abd86cc15fe5b29f577] Summary stored successfully for commit 08a93652
-[2026-09-03T07:25:43.186Z] INFO  [PushExecutor] [trace=c0264baf88165abd86cc15fe5b29f577] processPushPending(pre-push): pushed=1 failed=0
-[2026-09-03T07:25:43.186Z] INFO  [PrePushWorker] [trace=c0264baf88165abd86cc15fe5b29f577] PrePushWorker(pre-push): confirmed tail pass — pushed=1 failed=0
-[2026-09-03T07:35:57.978Z] INFO  [PrePushHook] [trace=11506c30ad6ca540f47d2d642facfa2a] pre-push hook: remote=origin budget=3000ms
-[2026-09-03T07:35:57.991Z] INFO  [RepoProfile] [trace=11506c30ad6ca540f47d2d642facfa2a] manual-disable read → false (by=manuallyDisabled, pid=25168, cwd=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-03T07:16:31.286Z)
-[2026-09-03T07:36:09.868Z] INFO  [SidebarWebviewProvider] pushMemories: 0 item(s)
-[2026-09-03T07:36:10.061Z] INFO  [SidebarWebviewProvider] pushMemories: 2 item(s)
-[2026-09-03T07:36:10.066Z] INFO  [SidebarWebviewProvider] pushCommits: 1 item(s), mode=single
-[2026-09-03T07:36:31.296Z] INFO  [SidebarWebviewProvider] pushMemories: 2 item(s)
-[2026-09-03T07:36:31.322Z] INFO  [SidebarWebviewProvider] pushCommits: 1 item(s), mode=single
-[2026-09-03T07:36:31.396Z] INFO  [bridge] generateCommitMessageForFiles() — 7 selected file(s)
-[2026-09-03T07:36:32.133Z] INFO  [Summarizer] Generating commit message for branch changes-features
-[2026-09-03T07:36:32.133Z] INFO  [LlmClient] LLM call: action=commit-message source=local-agent
-[2026-09-03T07:36:32.257Z] INFO  [ExecutableResolver] claude: `where claude` found nothing (Command failed: where claude
-INFO: Could not find files for the given pattern(s).
-)
-[2026-09-03T07:36:32.258Z] INFO  [ExecutableResolver] claude discovery: 1 candidate(s)=[C:\Users\nandi\.local\bin\claude.exe]; shims=[(none)]; knownPaths present=[C:\Users\nandi\.local\bin\claude.exe] (searched 24 PATH entries)
-[2026-09-03T07:36:34.582Z] INFO  [ExecutableResolver] Resolved claude executable: C:\Users\nandi\.local\bin\claude.exe (v2.1.119)
-[2026-09-03T07:36:36.480Z] WARN  [LocalAgentRunner] Local agent exited 1 but produced stdout; deferring to the parser. stderr tail: 
-[2026-09-03T07:36:36.481Z] ERROR [LlmClient] Local-agent call failed: action=commit-message tool=claude-code exe=C:\Users\nandi\.local\bin\claude.exe elapsedMs=1898 errorName=LocalAgentAuthError error=Claude Code returned an error (status 0): Not logged in · Please run /login
-[2026-09-03T07:36:44.899Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T07:36:45.867Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=2, summaries=1, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T07:55:54.274Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"c:\\Users\\nandi\\main-projects\\Zest_Solution\\Zest-Solution-","extensionPath":"c:\\Users\\nandi\\.antigravity-ide\\extensions\\jolli.jollimemory-vscode-0.99.17-universal"}
-[2026-09-03T07:55:54.709Z] INFO  [initialLoad] Loading all panels
-[2026-09-03T07:55:55.207Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=11768, cwd=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-, profile=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-03T07:16:31.286Z)
-[2026-09-03T07:55:55.460Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
-[2026-09-03T07:55:55.460Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
-[2026-09-03T07:55:55.460Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
-[2026-09-03T07:55:55.460Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
-[2026-09-03T07:55:56.081Z] INFO  [Sync:VsCodeBootstrap] Memory Bank sync engine built (auto-sync off — manual only)
-[2026-09-03T07:55:56.688Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:55:57.143Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T07:55:57.143Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T07:55:57.429Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:55:58.032Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:55:59.090Z] INFO  [SchemaV5Migration] Found 3 summary files to inspect
-[2026-09-03T07:55:59.103Z] INFO  [SchemaV5Migration] Reading 3 summaries...
-[2026-09-03T07:55:59.130Z] INFO  [SchemaV5Migration] Read 3 summaries in 27 ms
-[2026-09-03T07:55:59.130Z] INFO  [SchemaV5Migration] Writing 3 summary file(s) via active storage...
-[2026-09-03T07:55:59.484Z] INFO  [MetadataManager] Manifest updated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md (commit)
-[2026-09-03T07:55:59.484Z] INFO  [FolderStorage] Markdown generated: changes-features/feat-implement-responsive-navigation-component-wit-08a93652.md
-[2026-09-03T07:55:59.509Z] INFO  [MetadataManager] Manifest updated: changes-features/feat-updated-logo-svgs-restored-whatsapp-contact-n-377b022b.md (commit)
-[2026-09-03T07:55:59.509Z] INFO  [FolderStorage] Markdown generated: changes-features/feat-updated-logo-svgs-restored-whatsapp-contact-n-377b022b.md
-[2026-09-03T07:55:59.523Z] INFO  [MetadataManager] Manifest updated: changes-features/feat-implement-responsive-navigation-component-wit-95db2335.md (commit)
-[2026-09-03T07:55:59.523Z] INFO  [FolderStorage] Markdown generated: changes-features/feat-implement-responsive-navigation-component-wit-95db2335.md
-[2026-09-03T07:55:59.544Z] INFO  [FolderStorage] Cleaned up superseded MD: changes-features/feat-updated-logo-svgs-restored-whatsapp-contact-n-377b022b.md
-[2026-09-03T07:55:59.544Z] INFO  [FolderStorage] Wrote 3 files, deleted 0 (Schema v5 migration: re-pushing 3 v5 summaries to heal storage shadow)
-[2026-09-03T07:55:59.967Z] INFO  [FolderStorage] Wrote 1 files, deleted 0 (Schema v5 migration: re-pushing 3 v5 summaries to heal storage shadow)
-[2026-09-03T07:55:59.967Z] INFO  [SchemaV5Migration] Schema v5 migration complete: 0 migrated, 3 skipped, fresh=false, recovery=true (took 837 ms)
-[2026-09-03T07:55:59.968Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=1, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T07:56:00.048Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=1, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T07:56:00.113Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T07:56:00.116Z] INFO  [initialLoad] All panels loaded — updating status bar
-[2026-09-03T07:56:00.117Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T07:56:00.120Z] INFO  [activate] Schema v5 migration: alreadyDone=false fresh=false migrated=0 skipped=3
-[2026-09-03T07:56:00.531Z] INFO  [MigrationEngine] === Migration started ===
-[2026-09-03T07:56:00.690Z] INFO  [FolderStorage] Wrote 1 files, deleted 0 (Migration: copy index)
-[2026-09-03T07:56:00.693Z] INFO  [MigrationEngine] === Migration completed: 0 migrated, 1 skipped, 0 failed ===
-[2026-09-03T07:56:00.706Z] INFO  [MigrationEngine] === 0.99.2 head-regen (one-shot) started ===
-[2026-09-03T07:56:00.708Z] INFO  [MigrationEngine] Head regenerate: regenerated=1 skipped=0 failed=0
-[2026-09-03T07:56:00.712Z] INFO  [FolderStorage] Deleted visible MD: changes-features/feat-implement-responsive-navigation-component-wit-95db2335.md
-[2026-09-03T07:56:00.712Z] INFO  [MigrationEngine] Stale-child sweep: deleted=1 failed=0
-[2026-09-03T07:56:00.714Z] INFO  [activate] KB auto-migration: completed (1/1)
-[2026-09-03T07:56:02.110Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:56:02.486Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=1, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T07:56:02.843Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=1, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T07:56:03.129Z] INFO  [Installer] Checking Jolli Memory status
-[2026-09-03T07:56:03.195Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:56:04.093Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
-[2026-09-03T07:56:04.462Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=1, summaries=1, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
-[2026-09-03T07:58:16.472Z] INFO  [SidebarWebviewProvider] pushMemories: 0 item(s)
-[2026-09-03T07:58:16.624Z] INFO  [SidebarWebviewProvider] pushMemories: 2 item(s)
-[2026-09-03T07:58:16.627Z] INFO  [SidebarWebviewProvider] pushCommits: 1 item(s), mode=single
-[2026-09-03T08:08:32.779Z] INFO  [SidebarWebviewProvider] pushMemories: 2 item(s)
-[2026-09-03T08:08:32.806Z] INFO  [SidebarWebviewProvider] pushCommits: 1 item(s), mode=single
-[2026-09-03T08:16:24.733Z] INFO  [SidebarWebviewProvider] pushMemories: 2 item(s)
-[2026-09-03T08:16:25.574Z] INFO  [SidebarWebviewProvider] pushCommits: 1 item(s), mode=single
-[2026-09-03T09:16:47.173Z] INFO  [SidebarWebviewProvider] pushMemories: 2 item(s)
-[2026-09-03T09:16:47.848Z] INFO  [SidebarWebviewProvider] pushCommits: 1 item(s), mode=single
-[2026-09-03T10:16:50.274Z] INFO  [SidebarWebviewProvider] pushMemories: 2 item(s)
-[2026-09-03T10:16:51.104Z] INFO  [SidebarWebviewProvider] pushCommits: 1 item(s), mode=single
-[2026-09-03T11:16:53.751Z] INFO  [SidebarWebviewProvider] pushMemories: 2 item(s)
-[2026-09-03T11:16:54.649Z] INFO  [SidebarWebviewProvider] pushCommits: 1 item(s), mode=single
+[2026-09-04T02:14:10.098Z] INFO  [ExecutableResolver] [trace=23686268f02e9a21a42b6fd0fbbe2be1] claude discovery: 1 candidate(s)=[C:\Users\nandi\.local\bin\claude.exe]; shims=[(none)]; knownPaths present=[C:\Users\nandi\.local\bin\claude.exe] (searched 30 PATH entries)
+[2026-09-04T02:14:11.942Z] INFO  [ExecutableResolver] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Resolved claude executable: C:\Users\nandi\.local\bin\claude.exe (v2.1.119)
+[2026-09-04T02:14:12.082Z] INFO  [PushPendingStore] [trace=4aedcc71cec211cff90bdaca548956d0] Enqueued 1 new push-pending entries (branch=changes-features)
+[2026-09-04T02:14:12.085Z] INFO  [PrePushHook] [trace=4aedcc71cec211cff90bdaca548956d0] pre-push: recorded 1 commit(s) across 1 pushed ref(s)
+[2026-09-04T02:14:12.130Z] INFO  [PrePushHook] [trace=4aedcc71cec211cff90bdaca548956d0] pre-push: starting inline sync — 2808ms of budget remaining
+[2026-09-04T02:14:12.133Z] INFO  [PushExecutor] [trace=4aedcc71cec211cff90bdaca548956d0] processPrePushInline: 1 commit(s) in this push, 1 pending entr(ies) on disk
+[2026-09-04T02:14:12.186Z] INFO  [PushExecutor] [trace=4aedcc71cec211cff90bdaca548956d0] processPrePushInline: claimed 1/1 candidate(s)
+[2026-09-04T02:14:12.187Z] INFO  [StorageFactory] [trace=4aedcc71cec211cff90bdaca548956d0] StorageFactory.create: storageMode=dual-write, projectPath=C:\Users\nandi\main-projects\Zest_Solution\Zest-Solution-
+[2026-09-04T02:14:12.341Z] INFO  [StorageFactory] [trace=4aedcc71cec211cff90bdaca548956d0] Storage mode: dual-write (primary=orphan, shadow=folder)
+[2026-09-04T02:14:12.605Z] INFO  [PushExecutor] [trace=4aedcc71cec211cff90bdaca548956d0] processPrePushInline: triage — withMemory=0 generating=1 mergedChildren=0
+[2026-09-04T02:14:12.606Z] INFO  [PrePushHook] [trace=4aedcc71cec211cff90bdaca548956d0] pre-push: inline sync done — pushed=0 failed=0 noMemory=1 notAttempted=0 children=0 (no candidates with memory)
+[2026-09-04T02:14:13.659Z] WARN  [LocalAgentRunner] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Local agent exited 1 but produced stdout; deferring to the parser. stderr tail: 
+[2026-09-04T02:14:13.659Z] ERROR [LlmClient] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Local-agent call failed: action=summarize tool=claude-code exe=C:\Users\nandi\.local\bin\claude.exe elapsedMs=1715 errorName=LocalAgentAuthError error=Claude Code returned an error (status 0): Not logged in · Please run /login
+[2026-09-04T02:14:13.661Z] WARN  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] First API attempt failed: Claude Code returned an error (status 0): Not logged in · Please run /login. Retrying in 2000ms...
+[2026-09-04T02:14:15.664Z] INFO  [Summarizer] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Generating summary for commit eb39af09
+[2026-09-04T02:14:15.664Z] INFO  [Summarizer] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Context: transcript=80, files=1, lines=41+26
+[2026-09-04T02:14:15.664Z] INFO  [LlmClient] [trace=23686268f02e9a21a42b6fd0fbbe2be1] LLM call: action=summarize source=local-agent
+[2026-09-04T02:14:17.101Z] WARN  [LocalAgentRunner] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Local agent exited 1 but produced stdout; deferring to the parser. stderr tail: 
+[2026-09-04T02:14:17.102Z] ERROR [LlmClient] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Local-agent call failed: action=summarize tool=claude-code exe=C:\Users\nandi\.local\bin\claude.exe elapsedMs=1436 errorName=LocalAgentAuthError error=Claude Code returned an error (status 0): Not logged in · Please run /login
+[2026-09-04T02:14:17.103Z] ERROR [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] API call failed after retry: Claude Code returned an error (status 0): Not logged in · Please run /login
+[2026-09-04T02:14:17.103Z] WARN  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Saving summary with empty topics + local-agent-auth marker for commit eb39af09
+[2026-09-04T02:14:17.104Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] API summary generated (7.1s)
+[2026-09-04T02:14:17.104Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Plan registry scan: found 0 uncommitted slug(s) on changes-features: []
+[2026-09-04T02:14:17.105Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Plan association: detected 0 slug(s) from transcripts: []
+[2026-09-04T02:14:17.105Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Note registry scan: found 0 uncommitted note(s) on changes-features: []
+[2026-09-04T02:14:17.105Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Note association: detected 0 note(s): []
+[2026-09-04T02:14:17.106Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Reference association: detected 0 ref(s) for branch changes-features
+[2026-09-04T02:14:17.112Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Summary built for eb39af09: recap=no, topics=0, plans=absent, notes=absent, references=absent
+[2026-09-04T02:14:17.707Z] INFO  [GitOps] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Updated branch 'jollimemory/summaries/v3': 4 written, 0 deleted (via fast-import)
+[2026-09-04T02:14:17.724Z] INFO  [MetadataManager] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Manifest updated: changes-features/feat-implement-responsive-navigation-component-and-eb39af09.md (commit)
+[2026-09-04T02:14:17.724Z] INFO  [FolderStorage] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Markdown generated: changes-features/feat-implement-responsive-navigation-component-and-eb39af09.md
+[2026-09-04T02:14:17.730Z] INFO  [FolderStorage] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Wrote 4 files, deleted 0 (Add summary for eb39af09: feat: implement responsive navigation component an)
+[2026-09-04T02:14:17.731Z] INFO  [SummaryStore] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Summary stored successfully for commit eb39af09
+[2026-09-04T02:14:17.733Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Summary stored successfully for commit eb39af09 (620ms, 0 plans, 0 notes, 0 references)
+[2026-09-04T02:14:17.734Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] === Pipeline completed in 8.4s ===
+[2026-09-04T02:14:17.734Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] === Summary content (0 topics) ===
+[2026-09-04T02:14:17.804Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Processed 1 queue entries
+[2026-09-04T02:14:17.811Z] INFO  [SessionTracker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Enqueued queue operation: type=ingest tag=ingest file=1788488057808-00000001-c7cbf6ad-ingest.json
+[2026-09-04T02:14:17.817Z] INFO  [PushExecutor] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-09-04T02:14:17.823Z] INFO  [PushExecutor] [trace=23686268f02e9a21a42b6fd0fbbe2be1] processPushPending(post-queue): 1 pending entr(ies) (filtered to 1 hash(es))
+[2026-09-04T02:14:17.834Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] === Queue worker finished ===
+[2026-09-04T02:14:17.847Z] INFO  [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Processing queue entry: type=ingest triggeredBy=post-commit
+[2026-09-04T02:14:18.157Z] INFO  [LlmClient] [trace=23686268f02e9a21a42b6fd0fbbe2be1] LLM call: action=route source=local-agent
+[2026-09-04T02:14:19.427Z] INFO  [PushExecutor] [trace=23686268f02e9a21a42b6fd0fbbe2be1] processPushPending(post-queue): claimed 1/1 candidate(s)
+[2026-09-04T02:14:19.447Z] WARN  [LocalAgentRunner] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Local agent exited 1 but produced stdout; deferring to the parser. stderr tail: 
+[2026-09-04T02:14:19.447Z] ERROR [LlmClient] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Local-agent call failed: action=route tool=claude-code exe=C:\Users\nandi\.local\bin\claude.exe elapsedMs=1289 errorName=LocalAgentAuthError error=Claude Code returned an error (status 0): Not logged in · Please run /login
+[2026-09-04T02:14:19.449Z] ERROR [QueueWorker] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Ingest phase failed (non-fatal): Claude Code returned an error (status 0): Not logged in · Please run /login
+[2026-09-04T02:14:19.555Z] INFO  [PushExecutor] [trace=23686268f02e9a21a42b6fd0fbbe2be1] processPushPending(post-queue): triage — withMemory=1 noMemory=0 mergedChildren=0
+[2026-09-04T02:14:20.175Z] INFO  [PushExecutor] [trace=23686268f02e9a21a42b6fd0fbbe2be1] processPushPending(post-queue): pushing 1 commit(s)
+[2026-09-04T02:14:23.014Z] INFO  [GitOps] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Updated branch 'jollimemory/summaries/v3': 3 written, 0 deleted (via fast-import)
+[2026-09-04T02:14:23.022Z] INFO  [MetadataManager] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Manifest updated: changes-features/feat-implement-responsive-navigation-component-and-eb39af09.md (commit)
+[2026-09-04T02:14:23.022Z] INFO  [FolderStorage] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Markdown generated: changes-features/feat-implement-responsive-navigation-component-and-eb39af09.md
+[2026-09-04T02:14:23.025Z] INFO  [FolderStorage] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Wrote 3 files, deleted 0 (Overwrite summary for eb39af09: feat: implement responsive navigation component an)
+[2026-09-04T02:14:23.025Z] INFO  [SummaryStore] [trace=23686268f02e9a21a42b6fd0fbbe2be1] Summary stored successfully for commit eb39af09
+[2026-09-04T02:14:23.027Z] INFO  [PushExecutor] [trace=23686268f02e9a21a42b6fd0fbbe2be1] processPushPending(post-queue): write-back — writtenBack=1 childSkipped=0 cleanupPending=0 writeBackFailed=0
+[2026-09-04T02:14:23.074Z] INFO  [PushExecutor] [trace=23686268f02e9a21a42b6fd0fbbe2be1] processPushPending(post-queue): pushed=1 failed=0
