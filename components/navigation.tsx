@@ -66,27 +66,48 @@ export function Navigation() {
     }
   };
 
+  const handleHomeClick = (e: React.MouseEvent) => {
+    setIsMobileMenuOpen(false);
+    setIsManageMegamenuOpen(false);
+    setIsMarketMegamenuOpen(false);
+
+    if (typeof window !== "undefined" && window.location.pathname === "/") {
+      e.preventDefault();
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }, 150);
+    }
+  };
+
   const handleAboutClick = (e: React.MouseEvent) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);
     setIsManageMegamenuOpen(false);
     setIsMarketMegamenuOpen(false);
 
-    if (typeof window !== "undefined" && window.location.pathname === "/") {
-      const aboutElement = document.getElementById("about");
-      if (aboutElement) {
-        const headerOffset = 90;
-        const elementPosition = aboutElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    setTimeout(() => {
+      if (typeof window !== "undefined" && window.location.pathname === "/") {
+        const aboutElement = document.getElementById("about");
+        if (aboutElement) {
+          const headerOffset = 90;
+          const elementPosition = aboutElement.getBoundingClientRect().top;
+          const currentScroll = window.scrollY || window.pageYOffset;
+          const offsetPosition = elementPosition + currentScroll - headerOffset;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        } else {
+          window.location.href = "/#about";
+        }
+      } else {
+        window.location.href = "/#about";
       }
-    } else {
-      window.location.href = "/#about";
-    }
+    }, 150);
   };
 
   const handleGetStartedClick = (e: React.MouseEvent | React.TouchEvent) => {
@@ -133,11 +154,7 @@ export function Navigation() {
           <Link
             href="/"
             className="flex items-center gap-3 cursor-pointer group"
-            onClick={() => {
-              setIsManageMegamenuOpen(false);
-              setIsMarketMegamenuOpen(false);
-              setIsMobileMenuOpen(false);
-            }}
+            onClick={handleHomeClick}
           >
             <motion.div
               className="relative w-32 h-12 md:w-40 md:h-14"
@@ -178,6 +195,8 @@ export function Navigation() {
                       toggleMegamenu(link.label);
                     } else if (link.label === "About Us") {
                       handleAboutClick(e);
+                    } else if (link.label === "Home") {
+                      handleHomeClick(e);
                     } else {
                       setIsManageMegamenuOpen(false);
                       setIsMarketMegamenuOpen(false);
@@ -266,22 +285,18 @@ export function Navigation() {
         >
           <div className="py-4 space-y-2 max-h-[calc(100vh-6rem)] overflow-y-auto px-1 pb-6">
             {/* Home Link */}
-            <Link
+            <a
               href="/"
-              className="block py-3 px-4 text-base font-semibold text-foreground/80 hover:text-foreground hover:bg-muted/50 rounded-lg transition-all tracking-tight"
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                setIsMobileManageOpen(false);
-                setIsMobileMarketOpen(false);
-              }}
+              className="block py-3 px-4 text-base font-semibold text-foreground/80 hover:text-foreground hover:bg-muted/50 rounded-lg transition-all tracking-tight cursor-pointer"
+              onClick={handleHomeClick}
             >
               Home
-            </Link>
+            </a>
 
             {/* About Us Link */}
             <a
               href="/#about"
-              className="block py-3 px-4 text-base font-semibold text-foreground/80 hover:text-foreground hover:bg-muted/50 rounded-lg transition-all tracking-tight"
+              className="block py-3 px-4 text-base font-semibold text-foreground/80 hover:text-foreground hover:bg-muted/50 rounded-lg transition-all tracking-tight cursor-pointer"
               onClick={handleAboutClick}
             >
               About Us
