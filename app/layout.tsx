@@ -13,21 +13,9 @@ export const metadata: Metadata = {
   description:
     "Your comprehensive partner for B2B marketing services and B2C e-commerce solutions. From offline marketing to online marketplace management.",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/images/zs-20logo.png",
+    shortcut: "/images/zs-20logo.png",
+    apple: "/images/zs-20logo.png",
   },
 }
 

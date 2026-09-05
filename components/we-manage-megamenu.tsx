@@ -10,102 +10,104 @@ interface MegamenuProps {
   isOpen: boolean
 }
 
-interface MenuItem {
+export interface MenuItem {
   title: string
   slug: string
 }
 
-interface MenuSection {
+export interface MenuSection {
   icon: React.ComponentType<any>
   title: string
-  color: string
+  color?: string
   items: MenuItem[]
 }
 
+export const weManageSections: MenuSection[] = [
+  {
+    icon: ShoppingCart,
+    title: "Data Entry Services",
+    color: "text-foreground",
+    items: [
+      { title: "Online Data Entry Services", slug: "online-data-entry-services" },
+      { title: "Offline Data Entry Services", slug: "offline-data-entry-services" },
+      { title: "Image Data Entry Services", slug: "image-data-entry-services" },
+      { title: "Data Capture Service", slug: "data-capture-service" },
+    ],
+  },
+  {
+    icon: Package,
+    title: "e commerce platforms",
+    color: "text-foreground",
+    items: [
+      { title: "Product Upload Listing Services", slug: "product-upload-listing-services" },
+      {
+        title: "Ecommerce Product Listing services",
+        slug: "ecommerce-product-listing-services",
+      },
+      { title: "catalog management services", slug: "catalog-management-services" },
+      { title: "catalog processing services", slug: "catalog-processing-services" },
+      { title: "Magento Product Upload Services", slug: "magento-product-upload-services" },
+      { title: "Shopify Product Listing", slug: "shopify-product-listing" },
+      { title: "WooCommerce Product Upload", slug: "woocommerce-product-upload" },
+      { title: "BigCommerce Product Listing", slug: "bigcommerce-product-listing" },
+      { title: "opencart product listing", slug: "opencart-product-listing" },
+      { title: "Volusion product listing", slug: "volusion-product-listing" },
+      { title: "3dcart product listing", slug: "3dcart-product-listing" },
+    ],
+  },
+  {
+    icon: Store,
+    title: "Marketplaces",
+    color: "text-foreground",
+    items: [
+      { title: "Amazon", slug: "amazon-marketplace" },
+      { title: "Ebay", slug: "ebay-marketplace" },
+      { title: "walmart", slug: "walmart-marketplace" },
+      { title: "etsy", slug: "etsy-marketplace" },
+      { title: "souq", slug: "souq-marketplace" },
+    ],
+  },
+  {
+    icon: Briefcase,
+    title: "Amazon Management",
+    color: "text-foreground",
+    items: [
+      { title: "amazon listing creation services", slug: "amazon-listing-creation-services" },
+      {
+        title: "Amazon Product Listing Optimization Services",
+        slug: "amazon-product-listing-optimization-services",
+      },
+      { title: "Amazon Seo Services", slug: "amazon-seo-services" },
+      { title: "Amazon Listing Services", slug: "amazon-listing-services" },
+      { title: "Amazon Specialists", slug: "amazon-specialists" },
+      { title: "Amazon PPC Agency", slug: "amazon-ppc-agency" },
+    ],
+  },
+  {
+    icon: ImageIcon,
+    title: "Image Editing",
+    color: "text-foreground",
+    items: [
+      { title: "Image Retouching", slug: "image-retouching" },
+      { title: "Image Restoration", slug: "image-restoration" },
+      { title: "Image Manipulation", slug: "image-manipulation" },
+      { title: "Watermark Removal", slug: "watermark-removal" },
+      { title: "Add Watermark", slug: "add-watermark" },
+    ],
+  },
+  {
+    icon: Users,
+    title: "Virtual Assistant For eCommerce Store",
+    color: "text-foreground",
+    items: [
+      { title: "Chat Support", slug: "chat-support" },
+      { title: "Email Support", slug: "email-support" },
+    ],
+  },
+]
+
 export function WeManageMegamenu({ isOpen }: MegamenuProps) {
-  const menuSections: MenuSection[] = [
-    {
-      icon: ShoppingCart,
-      title: "Data Entry Services",
-      color: "text-foreground",
-      items: [
-        { title: "Online Data Entry Services", slug: "online-data-entry-services" },
-        { title: "Offline Data Entry Services", slug: "offline-data-entry-services" },
-        { title: "Image Data Entry Services", slug: "image-data-entry-services" },
-        { title: "Data Capture Service", slug: "data-capture-service" },
-      ],
-    },
-    {
-      icon: Package,
-      title: "e commerce platforms",
-      color: "text-foreground",
-      items: [
-        { title: "Product Upload Listing Services", slug: "product-upload-listing-services" },
-        {
-          title: "Ecommerce Product Listing services",
-          slug: "ecommerce-product-listing-services",
-        },
-        { title: "catalog management services", slug: "catalog-management-services" },
-        { title: "catalog processing services", slug: "catalog-processing-services" },
-        { title: "Magento Product Upload Services", slug: "magento-product-upload-services" },
-        { title: "Shopify Product Listing", slug: "shopify-product-listing" },
-        { title: "WooCommerce Product Upload", slug: "woocommerce-product-upload" },
-        { title: "BigCommerce Product Listing", slug: "bigcommerce-product-listing" },
-        { title: "opencart product listing", slug: "opencart-product-listing" },
-        { title: "Volusion product listing", slug: "volusion-product-listing" },
-        { title: "3dcart product listing", slug: "3dcart-product-listing" },
-      ],
-    },
-    {
-      icon: Store,
-      title: "Marketplaces",
-      color: "text-foreground",
-      items: [
-        { title: "Amazon", slug: "amazon-marketplace" },
-        { title: "Ebay", slug: "ebay-marketplace" },
-        { title: "walmart", slug: "walmart-marketplace" },
-        { title: "etsy", slug: "etsy-marketplace" },
-        { title: "souq", slug: "souq-marketplace" },
-      ],
-    },
-    {
-      icon: Briefcase,
-      title: "Amazon Management",
-      color: "text-foreground",
-      items: [
-        { title: "amazon listing creation services", slug: "amazon-listing-creation-services" },
-        {
-          title: "Amazon Product Listing Optimization Services",
-          slug: "amazon-product-listing-optimization-services",
-        },
-        { title: "Amazon Seo Services", slug: "amazon-seo-services" },
-        { title: "Amazon Listing Services", slug: "amazon-listing-services" },
-        { title: "Amazon Specialists", slug: "amazon-specialists" },
-        { title: "Amazon PPC Agency", slug: "amazon-ppc-agency" },
-      ],
-    },
-    {
-      icon: ImageIcon,
-      title: "Image Editing",
-      color: "text-foreground",
-      items: [
-        { title: "Image Retouching", slug: "image-retouching" },
-        { title: "Image Restoration", slug: "image-restoration" },
-        { title: "Image Manipulation", slug: "image-manipulation" },
-        { title: "Watermark Removal", slug: "watermark-removal" },
-        { title: "Add Watermark", slug: "add-watermark" },
-      ],
-    },
-    {
-      icon: Users,
-      title: "Virtual Assistant For eCommerce Store",
-      color: "text-foreground",
-      items: [
-        { title: "Chat Support", slug: "chat-support" },
-        { title: "Email Support", slug: "email-support" },
-      ],
-    },
-  ]
+  const menuSections = weManageSections
 
   // Column structure: Column 1: Data Entry + Amazon Management, Column 2: Ecommerce + Image Editing, Column 3: Marketplaces + Virtual Assistant
   const columns = [

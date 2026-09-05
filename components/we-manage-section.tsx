@@ -106,7 +106,7 @@ export function WeManageSection() {
 }
 
   return (
-    <section ref={sectionRef} className="py-12 sm:py-20 md:py-32 relative overflow-hidden">
+    <section ref={sectionRef} className="py-10 md:py-16 relative overflow-hidden">
       {/* Background gradient animation */}
       <motion.div
         className="absolute inset-0 opacity-10"
@@ -132,7 +132,7 @@ export function WeManageSection() {
           transition={{ duration: 0.8 }}
         >
           <motion.span
-            className="text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 bg-secondary/10 text-secondary rounded-full inline-block"
+            className="text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-secondary to-accent text-white shadow-lg shadow-secondary/25 rounded-full inline-block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -247,7 +247,7 @@ export function WeManageSection() {
           transition={{ delay: 1, duration: 0.8 }}
         >
           <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 sm:mb-4">Need help with a specific service?</p>
-          <Link href="#cta">
+          <a href="/#cta">
             <motion.button
               className="px-4 sm:px-8 py-2 sm:py-3 bg-secondary hover:bg-secondary/90 text-white font-semibold text-sm sm:text-base rounded-lg transition-colors"
               whileHover={{ scale: 1.05 }}
@@ -255,7 +255,7 @@ export function WeManageSection() {
             >
               Get in Touch
             </motion.button>
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>

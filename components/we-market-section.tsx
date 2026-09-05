@@ -93,7 +93,7 @@ export function WeMarketSection() {
 }
 
   return (
-    <section ref={sectionRef} className="py-16 sm:py-20 lg:py-24 bg-background">
+    <section ref={sectionRef} className="py-10 md:py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -179,7 +179,7 @@ export function WeMarketSection() {
           <p className="text-base sm:text-lg text-foreground/70 mb-6">
             Ready to accelerate your marketing strategy?
           </p>
-          <Link href="#cta">
+          <a href="/#cta">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -187,7 +187,7 @@ export function WeMarketSection() {
             >
               Get Started Today
             </motion.button>
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>

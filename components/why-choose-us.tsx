@@ -36,7 +36,7 @@ export function WhyChooseUs() {
   ]
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 md:py-32 relative overflow-hidden">
+    <section ref={sectionRef} className="py-10 md:py-16 relative overflow-hidden">
       <motion.div
         className="absolute inset-0 opacity-20"
         style={{

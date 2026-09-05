@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Phone, Sparkles, Zap, TrendingUp, Award } from "lucide-react"
 import { useEffect, useMemo } from "react"
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
+import { SITE_CONFIG } from "@/lib/constants"
 
 export function Hero() {
   const mouseX = useMotionValue(0)
@@ -30,18 +31,23 @@ export function Hero() {
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [mouseX, mouseY])
 
-  // Memoize particles to prevent re-creation on any parent re-render
-  // Reduced count to 18 for better performance
-  const particles = useMemo(() => [...Array(18)].map((_, i) => ({
-    width: Math.random() * 6 + 2,
-    height: Math.random() * 6 + 2,
-    left: `${Math.random() * 100}%`,
-    top: `${Math.random() * 100}%`,
-    duration: 4 + Math.random() * 4,
-    delay: Math.random() * 2,
-    yMove: -50 - Math.random() * 50,
-    xMove: Math.random() * 30 - 15,
-  })), [])
+  // Deterministic particle generator to prevent SSR hydration mismatch
+  const particles = useMemo(() => [...Array(18)].map((_, i) => {
+    const pseudoRandom = (seed: number) => {
+      const x = Math.sin(seed) * 10000
+      return x - Math.floor(x)
+    }
+    return {
+      width: Math.round(pseudoRandom(i * 7 + 1) * 6 + 2),
+      height: Math.round(pseudoRandom(i * 13 + 2) * 6 + 2),
+      left: `${Math.round(pseudoRandom(i * 19 + 3) * 100)}%`,
+      top: `${Math.round(pseudoRandom(i * 23 + 4) * 100)}%`,
+      duration: Math.round((4 + pseudoRandom(i * 29 + 5) * 4) * 10) / 10,
+      delay: Math.round((pseudoRandom(i * 31 + 6) * 2) * 10) / 10,
+      yMove: Math.round(-50 - pseudoRandom(i * 37 + 7) * 50),
+      xMove: Math.round(pseudoRandom(i * 41 + 8) * 30 - 15),
+    }
+  }), [])
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
@@ -171,6 +177,10 @@ export function Hero() {
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="relative group w-full sm:w-auto">
                 <Button
                   size="lg"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" });
+                  }}
                   className="rounded-full gap-2 bg-primary text-white px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base shadow-lg w-full sm:w-auto"
                 >
                   <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -180,23 +190,25 @@ export function Hero() {
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full sm:w-auto">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full gap-2 sm:gap-3 px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base hover:bg-muted w-full sm:w-auto"
-                >
-                  <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span>+91 6394239351</span>
-                </Button>
+                <a href={`tel:${SITE_CONFIG.phoneRaw}`}>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="rounded-full gap-2 sm:gap-3 px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base hover:bg-muted w-full sm:w-auto"
+                  >
+                    <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <span>{SITE_CONFIG.phoneDisplay}</span>
+                  </Button>
+                </a>
               </motion.div>
             </motion.div>
 
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 max-w-5xl mx-auto px-2">
               {[
-                { value: "5000+", label: "Clients Served", icon: Award, color: "from-primary to-primary/80" },
-                { value: "15+", label: "Years Experience", icon: TrendingUp, color: "from-secondary to-secondary/80" },
-                { value: "98%", label: "Satisfaction", icon: Sparkles, color: "from-primary to-secondary" },
+                { value: "12,000+", label: "Clients Served", icon: Award, color: "from-primary to-primary/80" },
+                { value: "8+", label: "Years Experience", icon: TrendingUp, color: "from-secondary to-secondary/80" },
+                { value: "95%", label: "Satisfaction", icon: Sparkles, color: "from-primary to-secondary" },
                 { value: "24/7", label: "Support", icon: Zap, color: "from-secondary to-primary" },
               ].map((stat, index) => (
                 <motion.div
