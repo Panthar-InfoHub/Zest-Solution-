@@ -31,7 +31,7 @@ export const servicesData: Service[] = [
     heroTitle: "Reliable Online Data Entry Services",
     heroDescription:
       "Transform your physical documents into organized digital data with our expert online data entry specialists.",
-    heroImage: "/services/we-market/online-data-entry.jpg",
+    heroImage: "/services/we-manage/data-entry-services/Online data entry.png",
     whatWeOffer: [
       "High-speed data entry with 99%+ accuracy",
       "Real-time data verification and validation",
@@ -75,7 +75,7 @@ export const servicesData: Service[] = [
     heroTitle: "Professional Offline Data Entry Solutions",
     heroDescription:
       "Convert your paper records into structured digital databases with precision and speed.",
-    heroImage: "/images/services/data-entry.png",
+    heroImage: "/services/we-manage/data-entry-services/Professional Offline Optimization.png",
     whatWeOffer: [
       "OCR and manual data entry",
       "Handwriting recognition",
@@ -118,7 +118,7 @@ export const servicesData: Service[] = [
     heroTitle: "Advanced Image Data Entry Services",
     heroDescription:
       "Leverage cutting-edge technology to extract valuable data from images automatically.",
-    heroImage: `https://www.uniquesdata.com/wp-content/uploads/2024/06/Image-Data-Entry-Services-by-Uniquesdata.png`,
+    heroImage: "/services/we-manage/data-entry-services/Image Data Entry Services.png",
     whatWeOffer: [
       "AI-powered image recognition",
       "Text extraction from images",
@@ -162,7 +162,7 @@ export const servicesData: Service[] = [
     heroTitle: "Enterprise Data Capture Services",
     heroDescription:
       "Automate data collection and processing with our intelligent capture solutions.",
-    heroImage: "https://salientprocess.com/wp-content/uploads/2023/06/01-What-Is-Data-Capture.jpg.webp",
+    heroImage: "/services/we-manage/data-entry-services/Data capture.png",
     whatWeOffer: [
       "Automated form recognition",
       "Multi-page document processing",
@@ -208,7 +208,7 @@ export const servicesData: Service[] = [
     heroTitle: "Expert Product Upload & Listing Services",
     heroDescription:
       "Get your products live on e-commerce platforms faster with our professional listing services.",
-    heroImage: "https://samyakonline.biz/theme/img/aws-services.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/Expert Product Upload & Listing Services.png",
     whatWeOffer: [
       "Multi-platform product uploads",
       "Bulk inventory management",
@@ -251,7 +251,7 @@ export const servicesData: Service[] = [
     heroTitle: "High-Converting Product Listings",
     heroDescription:
       "Create compelling product listings that drive sales on your e-commerce store.",
-    heroImage: "https://samyakonline.biz/theme/img/aws-services.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/ecommerce Product Listings.png",
     whatWeOffer: [
       "SEO-optimized descriptions",
       "Professional product photography",
@@ -294,7 +294,7 @@ export const servicesData: Service[] = [
     heroTitle: "Professional Catalog Management",
     heroDescription:
       "Keep your product catalog organized, updated, and optimized for maximum performance.",
-    heroImage: "https://anchanto.com/wp-content/uploads/2021/10/Achieving_greater_sales_with_better_listing_management-5.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/Professional Catalog Management.png",
     whatWeOffer: [
       "Ongoing catalog updates",
       "Inventory synchronization",
@@ -338,7 +338,7 @@ export const servicesData: Service[] = [
     heroTitle: "Catalog Data Processing Services",
     heroDescription:
       "Transform your product catalogs into platform-ready formats efficiently.",
-    heroImage: "https://anchanto.com/wp-content/uploads/2021/10/Tips_for_creating_an_engaging_catalogue-5.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/Catalog Data Processing Services.png",
     whatWeOffer: [
       "Format conversion",
       "Data validation",
@@ -381,7 +381,7 @@ export const servicesData: Service[] = [
     heroTitle: "Professional Magento Product Upload",
     heroDescription:
       "Get your products loaded into Magento quickly and correctly with our expert service.",
-    heroImage: "https://3.imimg.com/data3/IL/IO/MY-11110854/magento-product-upload-services-250x250.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/Magento Product Upload.png",
     whatWeOffer: [
       "Bulk product imports",
       "Attribute mapping",
@@ -424,7 +424,7 @@ export const servicesData: Service[] = [
     heroTitle: "Shopify Product Listing Services",
     heroDescription:
       "Launch your Shopify store with perfectly optimized product listings.",
-    heroImage: "https://5.imimg.com/data5/SELLER/Default/2024/10/459933219/OW/GM/DZ/2685597/shopify-product-listing-service.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/Shopify Product Listing Services.png",
     whatWeOffer: [
       "Complete product uploads",
       "Theme customization",
@@ -467,7 +467,7 @@ export const servicesData: Service[] = [
     heroTitle: "WooCommerce Product Upload Services",
     heroDescription:
       "Get your WordPress WooCommerce store populated with products professionally.",
-    heroImage: "https://www.amazonlistingservice.com/wp-content/uploads/2022/05/how-can-amazon-product-upload-services-accelerate-your-sales.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/WooCommerce Product Upload Services.png",
     whatWeOffer: [
       "Bulk product imports",
       "Plugin configuration",
@@ -510,7 +510,7 @@ export const servicesData: Service[] = [
     heroTitle: "BigCommerce Product Listing Services",
     heroDescription:
       "Enterprise-level product listing services for your BigCommerce store.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/BigCommerce Product Listing Services.png",
     whatWeOffer: [
       "Large-scale product uploads",
       "Advanced inventory sync",
@@ -553,7 +553,7 @@ export const servicesData: Service[] = [
     heroTitle: "OpenCart Product Listing Services",
     heroDescription:
       "Professional product listing and store optimization for OpenCart.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/OpenCart Product Listing Services.png",
     whatWeOffer: [
       "Bulk uploads",
       "Module installation",
@@ -596,7 +596,7 @@ export const servicesData: Service[] = [
     heroTitle: "Volusion Product Listing Services",
     heroDescription:
       "Complete product listing solution for your Volusion store.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/Volusion Product Listing Services.png",
     whatWeOffer: [
       "Product database setup",
       "Image management",
@@ -639,7 +639,7 @@ export const servicesData: Service[] = [
     heroTitle: "3DCart Product Listing Services",
     heroDescription:
       "Professional product listing services for your 3DCart store.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-manage/ecommerce-platform/3DCart Product Listing Services.png",
     whatWeOffer: [
       "Bulk product uploads",
       "Template customization",
@@ -684,7 +684,7 @@ export const servicesData: Service[] = [
     heroTitle: "Amazon Marketplace Management",
     heroDescription:
       "Maximize your sales on Amazon with professional marketplace management.",
-    heroImage: "/images/services/amazon.jpg",
+    heroImage: "/services/we-manage/marketplaces/Amazon.png",
     whatWeOffer: [
       "Seller account setup",
       "Product listing optimization",
@@ -727,7 +727,7 @@ export const servicesData: Service[] = [
     heroTitle: "eBay Seller Services",
     heroDescription:
       "Grow your eBay business with professional marketplace management.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-manage/marketplaces/eBay.png",
     whatWeOffer: [
       "Store setup and customization",
       "Bulk product uploads",
@@ -770,7 +770,7 @@ export const servicesData: Service[] = [
     heroTitle: "Walmart Seller Services",
     heroDescription:
       "Expand your reach with professional Walmart marketplace management.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-manage/marketplaces/Walmart.png",
     whatWeOffer: [
       "Seller onboarding",
       "Product catalog upload",
@@ -813,7 +813,7 @@ export const servicesData: Service[] = [
     heroTitle: "Etsy Store Services",
     heroDescription:
       "Create a successful Etsy shop with professional store setup and optimization.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-manage/marketplaces/Etsy.png",
     whatWeOffer: [
       "Shop creation and branding",
       "Product photography",
@@ -856,7 +856,7 @@ export const servicesData: Service[] = [
     heroTitle: "Souq Marketplace Services",
     heroDescription:
       "Enter the Middle East e-commerce market with Souq marketplace management.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-manage/marketplaces/Souq.png",
     whatWeOffer: [
       "Seller account setup",
       "Arabic content optimization",
@@ -901,7 +901,7 @@ export const servicesData: Service[] = [
     heroTitle: "Expert Amazon Listing Creation",
     heroDescription:
       "Create high-converting Amazon product listings that rank and sell.",
-    heroImage: "/images/services/amazon.jpg",
+    heroImage: "/services/we-manage/amazon-management/Amazon Listing Creation.png",
     whatWeOffer: [
       "Product research and validation",
       "Keyword research and optimization",
@@ -945,7 +945,7 @@ export const servicesData: Service[] = [
     heroTitle: "Amazon Listing Optimization",
     heroDescription:
       "Improve your Amazon product visibility and increase sales with expert optimization.",
-    heroImage: "/images/services/amazon.jpg",
+    heroImage: "/services/we-manage/amazon-management/Amazon Listing Optimization.png",
     whatWeOffer: [
       "Title and bullet point optimization",
       "Description enhancement",
@@ -988,7 +988,7 @@ export const servicesData: Service[] = [
     heroTitle: "Amazon SEO Services",
     heroDescription:
       "Get your products ranking #1 on Amazon search results with expert SEO.",
-    heroImage: "/images/services/amazon.jpg",
+    heroImage: "/services/we-manage/amazon-management/Amazon SEO Services.png",
     whatWeOffer: [
       "Keyword research for Amazon",
       "Ranking optimization",
@@ -1031,7 +1031,7 @@ export const servicesData: Service[] = [
     heroTitle: "Amazon Listing Management",
     heroDescription:
       "Professional management of your Amazon product listings for consistent growth.",
-    heroImage: "/images/services/amazon.jpg",
+    heroImage: "/services/we-manage/amazon-management/Amazon Listing services.png",
     whatWeOffer: [
       "Daily listing management",
       "Price optimization",
@@ -1075,7 +1075,7 @@ export const servicesData: Service[] = [
     heroTitle: "Amazon Account Specialists",
     heroDescription:
       "Access to expert Amazon specialists for account health and growth strategy.",
-    heroImage: "/images/services/amazon.jpg",
+    heroImage: "/services/we-manage/amazon-management/Amazon  Specialists.png",
     whatWeOffer: [
       "Account health monitoring",
       "Suspension recovery",
@@ -1118,7 +1118,7 @@ export const servicesData: Service[] = [
     description: "Professional article writing and rewriting services for blogs, websites, and publications.",
     heroTitle: "Expert Article Writing & Rewriting Services",
     heroDescription: "Create compelling, SEO-optimized articles that engage your audience and drive traffic.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/content-writing-services/Article Writing & Rewriting Services.png",
     whatWeOffer: [
       "Original article writing",
       "SEO-optimized content",
@@ -1160,7 +1160,7 @@ export const servicesData: Service[] = [
     description: "Engaging blog content that drives traffic and builds audience loyalty.",
     heroTitle: "Professional Blog Writing Services",
     heroDescription: "Consistent, high-quality blog content that keeps your audience engaged.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/content-writing-services/Blog Writing Services.png",
     whatWeOffer: [
       "Regular blog posts",
       "Topic research",
@@ -1202,7 +1202,7 @@ export const servicesData: Service[] = [
     description: "Persuasive web copy that converts visitors into customers.",
     heroTitle: "High-Converting Web Content Writing",
     heroDescription: "Compelling website copy designed to convert and engage your target audience.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/content-writing-services/Web Content Writing.png",
     whatWeOffer: [
       "Homepage copy",
       "Product descriptions",
@@ -1244,7 +1244,7 @@ export const servicesData: Service[] = [
     description: "Professional press releases that get media attention.",
     heroTitle: "Professional Press Release Writing",
     heroDescription: "Newsworthy press releases that attract media coverage and public attention.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/content-writing-services/Press Release Writing.png",
     whatWeOffer: [
       "Newsworthy content",
       "Media distribution",
@@ -1286,7 +1286,7 @@ export const servicesData: Service[] = [
     description: "Comprehensive company profiles that showcase your business.",
     heroTitle: "Professional Company Profile Writing",
     heroDescription: "Engaging company profiles that highlight your achievements and values.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/content-writing-services/Company Profile Writing.png",
     whatWeOffer: [
       "Company history",
       "Mission statement",
@@ -1328,7 +1328,7 @@ export const servicesData: Service[] = [
     description: "Engaging travel content for blogs, magazines, and websites.",
     heroTitle: "Professional Travel Writing Services",
     heroDescription: "Captivating travel stories and guides that inspire your readers.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/content-writing-services/Travel Writing Services.png",
     whatWeOffer: [
       "Destination guides",
       "Travel stories",
@@ -1370,7 +1370,7 @@ export const servicesData: Service[] = [
     description: "Professional product and service reviews.",
     heroTitle: "Professional Review Writing Services",
     heroDescription: "Honest, detailed reviews that help customers make informed decisions.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/content-writing-services/Review Writing Services.png",
     whatWeOffer: [
       "Product reviews",
       "Service reviews",
@@ -1413,7 +1413,7 @@ export const servicesData: Service[] = [
     description: "Comprehensive social media marketing strategies and management.",
     heroTitle: "Expert Social Media Marketing Services",
     heroDescription: "Build your brand presence and engage your audience across all social platforms.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/social-media/Expert Social Media Marketing Services.png",
     whatWeOffer: [
       "Social media strategy",
       "Content creation",
@@ -1455,7 +1455,7 @@ export const servicesData: Service[] = [
     description: "Social Media Optimization services to maximize your online presence.",
     heroTitle: "Professional SMO Services",
     heroDescription: "Optimize your social media profiles for maximum visibility and engagement.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/social-media/Professional SMO Services.png",
     whatWeOffer: [
       "Profile optimization",
       "Bio writing",
@@ -1497,7 +1497,7 @@ export const servicesData: Service[] = [
     description: "Professional Instagram advertising campaigns.",
     heroTitle: "Instagram Advertising Services",
     heroDescription: "Reach your target audience with strategic Instagram ad campaigns.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/social-media/Instagram Advertising Services.png",
     whatWeOffer: [
       "Campaign strategy",
       "Ad creation",
@@ -1539,7 +1539,7 @@ export const servicesData: Service[] = [
     description: "Strategic Facebook advertising for business growth.",
     heroTitle: "Professional Facebook Ads Services",
     heroDescription: "Drive conversions with targeted Facebook ad campaigns.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/social-media/Professional Facebook Ads Services.png",
     whatWeOffer: [
       "Campaign management",
       "Ad design",
@@ -1582,7 +1582,7 @@ export const servicesData: Service[] = [
     description: "On-page SEO optimization to improve search rankings.",
     heroTitle: "Professional On-Page Optimization",
     heroDescription: "Optimize your web pages for better search engine rankings and user experience.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/search-engine-opt/Professional On-Page Optimization.png",
     whatWeOffer: [
       "Keyword optimization",
       "Meta tags optimization",
@@ -1624,7 +1624,7 @@ export const servicesData: Service[] = [
     description: "Off-page SEO services to build authority and backlinks.",
     heroTitle: "Professional Off-Page Optimization",
     heroDescription: "Build domain authority through strategic link building and online reputation management.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/search-engine-opt/Professional Off-Page Optimization.png",
     whatWeOffer: [
       "Link building",
       "Guest posting",
@@ -1667,7 +1667,7 @@ export const servicesData: Service[] = [
     description: "Full-service SEO company for complete digital marketing solutions.",
     heroTitle: "Leading SEO Company",
     heroDescription: "Transform your online visibility with our comprehensive SEO services.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/digital-marketing/SEO Company.png",
     whatWeOffer: [
       "Complete SEO audit",
       "On-page optimization",
@@ -1709,7 +1709,7 @@ export const servicesData: Service[] = [
     description: "Affiliate marketing programs to boost your sales.",
     heroTitle: "Professional Affiliate Marketing Services",
     heroDescription: "Launch and manage profitable affiliate programs for your business.",
-    heroImage: "/images/services/ecommerce.jpg",
+    heroImage: "/services/we-market/digital-marketing/Affiliate Marketing Services.png",
     whatWeOffer: [
       "Program setup",
       "Affiliate recruitment",
@@ -1742,6 +1742,110 @@ export const servicesData: Service[] = [
         description: "Scale program for growth.",
       },
     ],
+  },
+  {
+    id: "amazon-ppc-agency",
+    slug: "amazon-ppc-agency",
+    title: "Amazon PPC Agency",
+    category: "Amazon Management",
+    description: "Expert Amazon PPC campaign management to boost sales and ROI.",
+    heroTitle: "Amazon PPC Campaign Management",
+    heroDescription: "Drive targeted traffic and increase product sales on Amazon with sponsored ads.",
+    heroImage: "/services/we-manage/amazon-management/Amazon Listing Optimization.png",
+    whatWeOffer: ["Campaign Setup & Structure", "Keyword Research & Bid Management", "ACoS & TACoS Optimization", "A/B Testing & Negative Keywords"],
+    whyChooseUs: ["Certified Amazon Advertising Partner", "Data-Driven Strategy", "Transparent Reporting", "Proven ACoS Reduction"],
+    steps: [{ title: "Audit", description: "Audit current PPC performance." }, { title: "Strategy", description: "Design targeted ad strategy." }, { title: "Optimization", description: "Continuous bid and keyword optimization." }],
+  },
+  {
+    id: "image-retouching",
+    slug: "image-retouching",
+    title: "Image Retouching",
+    category: "Image Editing",
+    description: "Professional product photo retouching for high-converting e-commerce listings.",
+    heroTitle: "High-Quality Image Retouching Services",
+    heroDescription: "Enhance product photos with studio-quality background removal, color correction, and lighting adjustments.",
+    heroImage: "/images/services/editing.jpg",
+    whatWeOffer: ["Background Removal & Clipping Path", "Color Correction & Lighting Adjustment", "Shadow & Reflection Creation", "High-Resolution Output"],
+    whyChooseUs: ["Fast 24-Hour Turnaround", "Pixel-Perfect Precision", "Affordable Bulk Rates", "100% Satisfaction Guarantee"],
+    steps: [{ title: "Upload", description: "Receive raw product photos." }, { title: "Editing", description: "Apply expert retouching." }, { title: "Quality Check", description: "Inspect and deliver final images." }],
+  },
+  {
+    id: "image-restoration",
+    slug: "image-restoration",
+    title: "Image Restoration",
+    category: "Image Editing",
+    description: "Restore damaged, low-quality, or old photos into crystal-clear digital assets.",
+    heroTitle: "Expert Image Restoration Services",
+    heroDescription: "Revitalize low-resolution or legacy media for modern e-commerce and marketing standards.",
+    heroImage: "/images/services/editing.jpg",
+    whatWeOffer: ["Noise & Artifact Removal", "Upscaling & Resolution Enhancement", "Detail Sharpness Restoration", "Color Recovery"],
+    whyChooseUs: ["Advanced Editing Tools", "Meticulous Attention to Detail", "Quick Delivery"],
+    steps: [{ title: "Analysis", description: "Inspect image defects." }, { title: "Restoration", description: "Clean and sharpen details." }],
+  },
+  {
+    id: "image-manipulation",
+    slug: "image-manipulation",
+    title: "Image Manipulation",
+    category: "Image Editing",
+    description: "Creative image compositing, object swapping, and visual enhancements for marketing.",
+    heroTitle: "Creative Image Manipulation",
+    heroDescription: "Transform product imagery into eye-catching promotional banners and hero graphics.",
+    heroImage: "/images/services/editing.jpg",
+    whatWeOffer: ["3D Product Mockups", "Element Removal & Insertion", "Creative Background Compositing"],
+    whyChooseUs: ["Creative Graphic Designers", "Custom Styles for Brands"],
+    steps: [{ title: "Concept", description: "Define image goal." }, { title: "Execution", description: "Composite graphic elements." }],
+  },
+  {
+    id: "watermark-removal",
+    slug: "watermark-removal",
+    title: "Watermark Removal",
+    category: "Image Editing",
+    description: "Clean unwanted text, logos, or watermarks from your proprietary image assets.",
+    heroTitle: "Professional Watermark Removal",
+    heroDescription: "Seamlessly clean images while preserving underlying textures and object details.",
+    heroImage: "/images/services/editing.jpg",
+    whatWeOffer: ["Seamless Content Removal", "Texture Reconstruction", "Batch Processing"],
+    whyChooseUs: ["Flawless Results", "Fast Processing"],
+    steps: [{ title: "Processing", description: "Remove watermarks carefully." }],
+  },
+  {
+    id: "add-watermark",
+    slug: "add-watermark",
+    title: "Add Watermark",
+    category: "Image Editing",
+    description: "Protect your brand identity and image copyrights with custom watermark overlays.",
+    heroTitle: "Brand Watermark & Copyright Overlay",
+    heroDescription: "Apply subtle, elegant brand logos or copyright text to all catalog assets.",
+    heroImage: "/images/services/editing.jpg",
+    whatWeOffer: ["Custom Overlay Positioning", "Opacity & Font Customization", "Automated Bulk Watermarking"],
+    whyChooseUs: ["Brand Protection", "Consistency Across Catalogs"],
+    steps: [{ title: "Apply", description: "Overlay brand watermark across assets." }],
+  },
+  {
+    id: "chat-support",
+    slug: "chat-support",
+    title: "Chat Support",
+    category: "Virtual Assistant",
+    description: "Real-time 24/7 live chat support to assist e-commerce store visitors and convert leads.",
+    heroTitle: "24/7 E-commerce Live Chat Support",
+    heroDescription: "Engage store visitors instantly, answer product inquiries, and boost checkout conversions.",
+    heroImage: "/images/services/va.jpg",
+    whatWeOffer: ["24/7 Live Agent Coverage", "Order Tracking & Inquiry Handling", "Multi-lingual Support", "CRM Integration"],
+    whyChooseUs: ["Trained Support Specialists", "High Satisfaction Ratings", "Higher Conversion Rates"],
+    steps: [{ title: "Setup", description: "Integrate chat widget." }, { title: "Support", description: "Provide 24/7 live agent support." }],
+  },
+  {
+    id: "email-support",
+    slug: "email-support",
+    title: "Email Support",
+    category: "Virtual Assistant",
+    description: "Dedicated e-commerce email support for customer service, returns, and order inquiries.",
+    heroTitle: "E-commerce Email Customer Support",
+    heroDescription: "Maintain fast response times and high customer satisfaction across all email channels.",
+    heroImage: "/images/services/va.jpg",
+    whatWeOffer: ["Ticket Resolution & Inbox Management", "Return & Refund Handling", "Helpdesk Integration (Zendesk, Freshdesk)"],
+    whyChooseUs: ["Fast Response Guarantee", "Professional Tone"],
+    steps: [{ title: "Integration", description: "Connect customer support inbox." }, { title: "Response", description: "Resolve customer inquiries efficiently." }],
   },
 ]
 

@@ -10,59 +10,61 @@ interface MegamenuProps {
   isOpen: boolean
 }
 
-interface MenuItem {
+export interface MenuItem {
   title: string
   slug: string
 }
 
-interface MenuSection {
+export interface MenuSection {
   icon: React.ComponentType<any>
   title: string
   items: MenuItem[]
 }
 
+export const weMarketSections: MenuSection[] = [
+  {
+    icon: BookOpen,
+    title: "Content Writing Services",
+    items: [
+      { title: "Article Writing & Rewriting", slug: "article-writing-rewriting" },
+      { title: "Blog Writing Services", slug: "blog-writing-services" },
+      { title: "Web Content Writing", slug: "web-content-writing" },
+      { title: "Press Release Writing", slug: "press-release-writing" },
+      { title: "Company Profile Writing", slug: "company-profile-writing" },
+      { title: "Travel Writing", slug: "travel-writing" },
+      { title: "Review Writing", slug: "review-writing" },
+    ],
+  },
+  {
+    icon: Facebook,
+    title: "Social Media",
+    items: [
+      { title: "Social Media Marketing", slug: "social-media-marketing" },
+      { title: "SMO Services", slug: "smo-services" },
+      { title: "Instagram Ads", slug: "instagram-ads" },
+      { title: "Facebook Ads", slug: "facebook-ads" },
+    ],
+  },
+  {
+    icon: BarChart3,
+    title: "Search Engine Optimization",
+    items: [
+      { title: "On Page Optimization", slug: "on-page-optimization" },
+      { title: "Off Page Optimization Services", slug: "off-page-optimization-services" },
+    ],
+  },
+  {
+    icon: Megaphone,
+    title: "Digital Marketing",
+    items: [
+      { title: "Search Engine Optimization Company", slug: "search-engine-optimization-company" },
+      { title: "Affiliate Marketing Services", slug: "affiliate-marketing-services" },
+    ],
+  },
+]
+
 export function WeMarketMegamenu({ isOpen }: MegamenuProps) {
-  const menuSections: MenuSection[] = [
-    {
-      icon: BookOpen,
-      title: "Content Writing Services",
-      items: [
-        { title: "Article Writing & Rewriting", slug: "article-writing-rewriting" },
-        { title: "Blog Writing Services", slug: "blog-writing-services" },
-        { title: "Web Content Writing", slug: "web-content-writing" },
-        { title: "Press Release Writing", slug: "press-release-writing" },
-        { title: "Company Profile Writing", slug: "company-profile-writing" },
-        { title: "Travel Writing", slug: "travel-writing" },
-        { title: "Review Writing", slug: "review-writing" },
-      ],
-    },
-    {
-      icon: Facebook,
-      title: "Social Media",
-      items: [
-        { title: "Social Media Marketing", slug: "social-media-marketing" },
-        { title: "SMO Services", slug: "smo-services" },
-        { title: "Instagram Ads", slug: "instagram-ads" },
-        { title: "Facebook Ads", slug: "facebook-ads" },
-      ],
-    },
-    {
-      icon: BarChart3,
-      title: "Search Engine Optimization",
-      items: [
-        { title: "On Page Optimization", slug: "on-page-optimization" },
-        { title: "Off Page Optimization Services", slug: "off-page-optimization-services" },
-      ],
-    },
-    {
-      icon: Megaphone,
-      title: "Digital Marketing",
-      items: [
-        { title: "Search Engine Optimization Company", slug: "search-engine-optimization-company" },
-        { title: "Affiliate Marketing Services", slug: "affiliate-marketing-services" },
-      ],
-    },
-  ]
+  const menuSections = weMarketSections
 
   return (
     <motion.div

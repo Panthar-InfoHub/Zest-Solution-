@@ -1,30 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, Award, Clock } from "lucide-react";
 import type { Variants } from "framer-motion";
 
 export function WhoWeAre() {
-  const stats = [
-    {
-      value: "1,200+",
-      label: "Projects Delivered",
-      icon: Award,
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      value: "110+",
-      label: "Employees",
-      icon: Users,
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      value: "12+",
-      label: "Years of Experience",
-      icon: Clock,
-      color: "from-blue-500 to-blue-600",
-    },
-  ];
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -47,7 +26,7 @@ export function WhoWeAre() {
   };
 
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section id="about" className="relative py-10 md:py-16 scroll-mt-20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-background" />
       <div
@@ -91,7 +70,7 @@ export function WhoWeAre() {
         />
       </motion.div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 w-full">
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center max-w-6xl mx-auto"
           variants={containerVariants}
@@ -130,9 +109,7 @@ export function WhoWeAre() {
                 At Zest Solutions, we are your trusted digital growth partner.
                 With over a decade of expertise, we provide comprehensive B2B
                 and B2C solutions including digital marketing, marketplace
-                management, e-commerce optimization, and brand development. Our
-                dedicated team of 110+ professionals is committed to delivering
-                exceptional results for 1,200+ successful projects worldwide.
+                management, e-commerce optimization, and brand development.
               </motion.p>
 
               <motion.p
@@ -149,73 +126,6 @@ export function WhoWeAre() {
                 success.
               </motion.p>
             </motion.div>
-
-            {/* Stats Grid */}
-            <motion.div
-              className="grid grid-cols-1 md:grid-cols-3 gap-6"
-              variants={containerVariants}
-            >
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  className="relative group"
-                  variants={itemVariants}
-                  whileHover={{
-                    y: -8,
-                    transition: { duration: 0.3 },
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity" />
-
-                  <motion.div
-                    className="relative bg-card/50 backdrop-blur-md border border-primary/20 rounded-2xl p-8 transition-all"
-                    whileHover={{
-                      borderColor: "rgba(255, 107, 53, 0.5)",
-                    }}
-                  >
-                    <motion.div
-                      className={`w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center shadow-lg`}
-                      animate={{
-                        rotate: [0, 360],
-                        scale: [1, 1.1, 1],
-                      }}
-                      transition={{
-                        rotate: {
-                          duration: 20,
-                          repeat: Number.POSITIVE_INFINITY,
-                          ease: "linear",
-                        },
-                        scale: {
-                          duration: 3,
-                          repeat: Number.POSITIVE_INFINITY,
-                          ease: "easeInOut",
-                        },
-                      }}
-                    >
-                      <stat.icon className="w-7 h-7 text-white" />
-                    </motion.div>
-
-                    <motion.div
-                      className="text-4xl md:text-5xl font-bold text-center mb-2 bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent"
-                      initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{
-                        delay: 0.5 + index * 0.1,
-                        type: "spring",
-                        stiffness: 200,
-                      }}
-                      viewport={{ once: true }}
-                    >
-                      {stat.value}
-                    </motion.div>
-
-                    <p className="text-center text-sm font-semibold text-muted-foreground group-hover:text-foreground transition-colors">
-                      {stat.label}
-                    </p>
-                  </motion.div>
-                </motion.div>
-              ))}
-            </motion.div>
           </motion.div>
 
           {/* YouTube Video */}
@@ -229,8 +139,8 @@ export function WhoWeAre() {
               <div className="relative pt-[56.25%] bg-black">
                 <iframe
                   className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&fs=1"
-                  title="YouTube video player"
+                  src="https://www.youtube.com/embed/9nl0w7Gb6p4?rel=0&modestbranding=1&fs=1"
+                  title="About Zest Solutions Video"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
