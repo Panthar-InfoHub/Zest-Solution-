@@ -157,7 +157,7 @@ export function CTA() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-bold mb-1 text-sm sm:text-base">Email Us</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground truncate">connect@zestsolutions.in</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground truncate">{SITE_CONFIG.email}</p>
                   </div>
                 </div>
               </Card>
