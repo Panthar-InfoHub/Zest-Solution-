@@ -106,7 +106,7 @@ export function Footer() {
           <div className="flex flex-col gap-3 sm:gap-4 text-xs sm:text-sm text-primary-foreground/60 text-center sm:text-left">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
               <p>© {currentYear} Zest Solution. All rights reserved.</p>
-              <p className="text-primary-foreground/60">Designed and Developed By Panther Inhub Pvt. Ltd.</p>
+              <p className="text-primary-foreground/60">Designed and Developed By Panthar Infohub Pvt. Ltd.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center sm:justify-start">
               <a href="#" className="hover:text-primary-foreground transition-colors">
