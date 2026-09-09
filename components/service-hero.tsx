@@ -115,11 +115,11 @@ export function ServiceHero({ service }: ServiceHeroProps) {
             </div>
           </div>
         ) : (
-          <div className="relative w-full max-w-md lg:max-w-lg rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 p-2 sm:p-3 shadow-2xl">
+          <div className="relative w-fit max-w-full rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 p-2 sm:p-3 shadow-2xl">
             <img
               src={service.heroImage || "/placeholder.svg"}
               alt={service.title}
-              className="w-full h-auto max-h-[350px] object-contain rounded-xl bg-background/20"
+              className="w-auto h-auto max-h-[380px] max-w-full object-contain rounded-xl"
             />
           </div>
         )}
