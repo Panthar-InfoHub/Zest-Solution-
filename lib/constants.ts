@@ -1,8 +1,7 @@
 export const SITE_CONFIG = {
-  phoneDisplay: "+91 8484099961",
-  phoneRaw: "918484099961",
-  whatsappNumber: "918484099961",
-  email: "info@zestsolution.in",
+  phoneDisplay: "+91 6394239351",
+  phoneRaw: "916394239351",
+  whatsappNumber: "916394239351",
+  email: "connect@zestsolutions.in",
   address: "Lucknow, Uttar Pradesh, India",
 }
-

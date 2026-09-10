@@ -157,7 +157,7 @@ export function Navigation() {
             onClick={handleHomeClick}
           >
             <motion.div
-              className="relative w-32 h-12 md:w-40 md:h-14"
+              className="relative w-40 h-12 md:w-40 md:h-14"
               style={{ scale: logoScale, opacity: logoOpacity }}
               whileHover={{ y: -2, scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
